@@ -1,0 +1,26 @@
+window.newsData = {
+    mainGrid: {
+        gridType: 2,
+        items: [
+            {
+                id: 1,
+                position: 1,
+                image: 'https://...',
+                title: 'Заголовок',
+                description: 'Описание',
+                link: '/link',
+                category: { name: 'Общее', link: '/category' },
+                showTimer: true,
+                timerEnd: '2026-07-20T23:59:59'
+            }
+        ]
+    },
+    newsList: {
+        title: 'Последние записи',
+        maxItems: 5,
+        viewAllLink: '/ru/news/',
+        viewAllText: 'Посмотреть все записи',
+        items: [
+        ]
+    }
+};
