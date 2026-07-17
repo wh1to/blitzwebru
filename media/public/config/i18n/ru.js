@@ -234,6 +234,7 @@ GS.CommonMenu.i18n.addDictionaryFromConfig({
     "realm_link_title_tanksblitz_card": "Карта Леста",
     "realm_link_title_tanksblitz_final25": "Хватай билеты на Финал!",
     "realm_link_title_tanksblitz_sberspasibo": "Бонусы за Спасибо",
+    "realm_link_title_projectblitz_telegram": "Мы в Telegram!",
     "realm_link_title_tanksblitz_tele2": "Блиц анлим",
     "realm_link_title_tanksblitz_victoryday2026": "Ко Дню Победы",
     "realm_link_title_tinkoff": "Карта Wargaming от Тинькофф",
