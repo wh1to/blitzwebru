@@ -149,6 +149,7 @@ GS.CommonMenu.i18n.setDictionary({
     "realm_link_title_support": "Поддержка",
     "realm_link_title_tanksblitz_card": "Карта Tanks Blitz",
     "realm_link_title_tanksblitz_sberspasibo": "Бонусы за Спасибо",
+    "realm_link_title_projectblitz_telegram": "Мы в Telegram!",
     "realm_link_title_personal": "Личный кабинет",
     "tooltip_games": "Игры",
     "tooltip_services": "Сервисы",

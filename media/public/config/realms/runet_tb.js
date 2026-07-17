@@ -23,6 +23,12 @@ GS.CommonMenu.configs.realm = {
             "color": "5aff8b",
             "id": 149,
             "title_text": "realm_link_title_tanksblitz_sberspasibo"
+        },
+        {
+            "url": "",
+            "color": "42AAFF",
+            "id": 150,
+            "title_text": "realm_link_title_projectblitz_telegram"
         }
     ],
     "name": "runet",
