@@ -822,7 +822,6 @@
 
 
 window.onload = function() {
-    // 1. Монтируем Vue
     window.mount('newsPage', false, context, window.wbpSettings);
 };
 (function() {
@@ -978,7 +977,6 @@ var positions = [
         </div>
     `;
     
-    // Запускаем карусель после вставки в DOM
     setTimeout(function() {
         document.querySelectorAll('[id^="carousel-"]').forEach(function(container) {
             var slides = container.querySelectorAll('.carousel-slide');
