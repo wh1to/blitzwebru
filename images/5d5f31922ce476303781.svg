@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="21px" viewBox="0 0 18 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>EBBA9D2A-1A5A-4571-88CC-446653E93D93</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-29.8%" y="-28.7%" width="159.5%" height="151.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="93.7937565%" x2="50%" y2="51.2907961%" id="linearGradient-2">
+            <stop stop-color="#8B8B8B" offset="0%"></stop>
+            <stop stop-color="#626262" offset="9.91239162%"></stop>
+            <stop stop-color="#D9D9D9" offset="97.0525568%"></stop>
+            <stop stop-color="#FCFCFC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10.4829395,5.09858591 L4.07354885,13.9203553 L2.7405683,12.1787348 L9.14995893,3.35696539 L10.4829395,5.09858591 Z M11.6307612,6.59828514 L12.6961136,7.99023308 C12.9706415,8.34892056 12.9706415,8.84710921 12.6961136,9.2057967 L7.37474923,16.1584843 C7.0390806,16.5970559 6.41143491,16.6804752 5.97286335,16.3448066 C5.90280935,16.2911895 5.84015818,16.2285383 5.7865411,16.1584843 L5.2213706,15.4200545 L11.6307612,6.59828514 Z M8.00213718,1.85726616 L1.59274655,10.6790355 L0.46517673,9.2057967 C0.190648818,8.84710921 0.190648818,8.34892056 0.46517673,7.99023308 L5.7865411,1.03754547 C6.12220972,0.598973905 6.74985541,0.515554591 7.18842697,0.851223218 C7.25848097,0.9048403 7.32113214,0.967491478 7.37474923,1.03754547 L8.00213718,1.85726616 Z" id="path-3"></path>
+        <filter x="-1.8%" y="-5.0%" width="103.7%" height="104.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.198963995 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Type-/-Silver_III" transform="translate(-3.000000, 1.000000)" fill-rule="nonzero">
+            <g id="Silver_III">
+                <g id="Group-2" filter="url(#filter-1)" transform="translate(5.419355, 1.563275)">
+                    <g id="Combined-Shape">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

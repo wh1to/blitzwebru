@@ -1,0 +1,24 @@
+<svg width="17" height="18" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Search</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(12754 -19132)">
+<g id="Search">
+<g id="Ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-12754 19132)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-12754 19132)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Rectangle 8">
+<use xlink:href="#path2_fill" transform="matrix(0.692784 0.721145 -0.692784 0.721145 -12741.7 19143.6)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 14.8753 7.74211C 14.8753 12.018 11.5453 15.4842 7.43764 15.4842C 3.32994 15.4842 0 12.018 0 7.74211C 0 3.46626 3.32994 0 7.43764 0C 11.5453 0 14.8753 3.46626 14.8753 7.74211Z"/>
+<path id="path1_stroke_2x" d="M 12.8753 7.74211C 12.8753 10.9898 10.3659 13.4842 7.43764 13.4842L 7.43764 17.4842C 12.7248 17.4842 16.8753 13.0461 16.8753 7.74211L 12.8753 7.74211ZM 7.43764 13.4842C 4.50938 13.4842 2 10.9898 2 7.74211L -2 7.74211C -2 13.0461 2.15051 17.4842 7.43764 17.4842L 7.43764 13.4842ZM 2 7.74211C 2 4.49445 4.50938 2 7.43764 2L 7.43764 -2C 2.15051 -2 -2 2.43808 -2 7.74211L 2 7.74211ZM 7.43764 2C 10.3659 2 12.8753 4.49445 12.8753 7.74211L 16.8753 7.74211C 16.8753 2.43808 12.7248 -2 7.43764 -2L 7.43764 2Z"/>
+<path id="path2_fill" d="M 0 1C 0 0.447715 0.447715 0 1 0L 5.74791 0C 6.3002 0 6.74791 0.447715 6.74791 1L 6.74791 1.10872C 6.74791 1.66101 6.3002 2.10872 5.74791 2.10872L 1 2.10872C 0.447715 2.10872 0 1.66101 0 1.10872L 0 1Z"/>
+</defs>
+</svg>
