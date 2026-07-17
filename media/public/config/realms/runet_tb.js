@@ -19,15 +19,9 @@ GS.CommonMenu.configs.realm = {
             "title_text": "realm_link_title_tanksblitz_card"
         },
         {
-            "url": "https://tanksblitz.ru/ru/news/common/sber-spasibo-bonus/?utm_campaign=tb-sberspasibo",
-            "color": "5aff8b",
-            "id": 149,
-            "title_text": "realm_link_title_tanksblitz_sberspasibo"
-        },
-        {
             "url": "",
             "color": "42AAFF",
-            "id": 150,
+            "id": 149,
             "title_text": "realm_link_title_projectblitz_telegram"
         }
     ],
