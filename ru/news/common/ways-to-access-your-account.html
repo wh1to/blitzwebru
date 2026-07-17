@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="color-scheme" content="only light">
+    <meta name="supported-color-schemes" content="light">
+    <style>
+        :root { color-scheme: only light; } 
+    </style>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="title" content="Tanks Blitz: танковая MMO-игра">
+    <meta name="description" content="Легендарный танковый шутер. Сражайся в командных боях 7 на 7 в одиночку или с друзьями, исследуй и улучшай бронетехнику, пробуй разные тактики и побеждай. Выбери танк и отправляйся в бой!">
+    <meta property="og:image" content="images/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://wh1to.github.io/blitzwebru/css/app.d67cb2.css">
+    <title>Главная | Project Blitz</title>
+    <script async="" src="https://wh1to.github.io/blitzwebru/js/tag.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+</head>
+<body class="page ">
+    <div class="page_body" id="app">
+        <div class="page_content">
+            <main class="news-page"></main>
+            <common-menu></common-menu>
+            <main-notification></main-notification>
+            <main-navigation></main-navigation>
+            <region-popup></region-popup>
+            <flash-message></flash-message>
+            <router-view></router-view>
+    </div>
+    <main-footer></main-footer>
+    <download-popup></download-popup>
+        </div>
+    </div>
+</body>
+
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(92495432, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(100962974, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(92986267, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+        window.ymId = 92986267;
+    </script>
+
+    <noscript><div><img src="https://mc.yandex.ru/watch/92495432" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/100962974" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/92986267" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    <script>
+        window.wbpSettings = {
+            'realm': 'ru',
+            'realms': ['ru'],
+            'dev': false,
+            'defaultLang': 'ru',
+            'language': 'ru',
+            'realmLangs': {"ru": {"ru": "ru"}},
+            'langs': JSON.parse('[{"code": "ru", "text": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439"}]'),
+            'commonMenu': {
+                'sswClientId': 'QiX7FAdbGfgUqJ6bABkRYLfUqQ27O3ZuZcZPJmVt',
+                'sswUrl': 'https://lesta.ru',
+                'frontedUrl': 'https://wh1to.github.io/blitzwebru/',
+                'loaderPath': 'js/loader.min.js',
+                'backendUrls': JSON.parse('{"ru": "https://wh1to.github.io/blitzwebru/"}')
+            },
+            'links': {
+                'system': {
+                    "ru": [
+                        {"type": "eula", "url": "https://legal.tanksblitz.info/eula/", "text": "Лицензионное соглашение"},
+                        {"type": "privacy", "url": "https://legal.tanksblitz.info/privacy-policy/", "text": "Политика конфиденциальности"},
+                        {"type": "system", "url": "/content/docs/system-requirements/", "text": "Системные требования"},
+                        {"type": "job", "url": "https://join.lesta.team/", "text": "Вакансии «Леста Игры»"},
+                        {"type": "vol", "url": "https://vol.lesta.ru/", "text": "Волонтёрам"}
+                    ]
+                },
+                'social': [
+                    {"type": "max", "url": "https://max.ru/tanksblitz", "text": "Макс"},
+                    {"type": "vk", "url": "https://vk.com/club49033185", "text": "ВКОНТАКТЕ"},
+                    {"type": "telegram", "url": "https://t.me/tanks_blitz_official", "text": "Telegram"},
+                    {"type": "youtube", "url": "https://www.youtube.com/channel/UCrh8Fd_QKmzhv4lhrS-k4sQ", "text": "Youtube"},
+                    {"type": "twitch", "url": "https://www.twitch.tv/tanks_blitz_official", "text": "Twitch"}
+                ],
+                'age': {
+                    "ru": []
+                },
+                'store': [
+                    {"type": "app-gallery", "url": "https://appgallery.huawei.ru/app/C106970213", "text": "Скачайте в <span class=\"button-download_store\">App Gallery</span>"},
+                    {"type": "app-store", "url": "https://itunes.apple.com/app/tanks-blitz-pvp-mmo/id1634012602", "text": "Скачайте в <span class=\"button-download_store\">App Store</span>"},
+                    {"type": "ru-store", "url": "https://apps.rustore.ru/app/com.tanksblitz", "text": "Скачайте в <span class=\"button-download_store\">Rustore</span>"},
+                    {"type": "mac-app-store", "url": "https://itunes.apple.com/app/tanks-blitz-pvp-mmo/id1634012602", "text": "Скачайте в <span class=\"button-download_store\">Mac App Store</span>"},
+                    {"type": "lgc", "url": "https://lesta.ru/ru/lgc/", "text": "Скачайте в <span class=\"button-download_store\">Lesta Game Center</span>"},
+                    {"type": "galaxy-store", "url": "https://apps.samsung.com/appquery/appDetail.as?appId=com.tanksblitz", "text": "Скачайте в <span class=\"button-download_store\">Galaxy Store</span>"},
+                    {"type": "get-apps", "url": "https://global.app.mi.com/details?id=com.tanksblitz", "text": "Скачайте в <span class=\"button-download_store\">Get Apps</span>"},
+                    {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=com.tanksblitz", "text": "Скачайте в <span class=\"button-download_store\">Google Play</span>"}
+                ]
+            },
+            STATIC_URL: 'https://cdn-ptl-static.tanksblitz.ru/newstatic/',
+            CSRF: {
+                API_URL: 'https://tanksblitz.ru/set_csrf/',
+                COOKIE_NAME: 'csrftokennew',
+                PARAM_NAME: 'csrftokennew'
+            },
+            AUTH: {
+                TRUSTED_ROOT: 'https://tanksblitz.ru/',
+                LOGIN_URL: 'https://tanksblitz.ru/auth/login/',
+                LOGIN_COMPLETE_URL: 'https://tanksblitz.ru/auth/login/complete/',
+                LOGIN_COMPLETE_IMMEDIATE_URL: 'https://tanksblitz.ru/auth/login/complete/immediate/',
+                LOGOUT_URL: 'https://tanksblitz.ru/auth/logout/',
+                CONTINUE_PROCESS_PARAMETER_NAME: 'auth_process',
+                ATTEMPT_IMMEDIATE_COOKIE_NAME: 'auth_sso_attempt_immediate',
+                SSO_ENABLED: true,
+                ACCOUNT_INFO_URL: 'https://tanksblitz.ru/auth/account_info/'
+            },
+            SWITCHES: JSON.parse(`{
+            "tournament_event_chests_random_order": {
+                "name": "tournament_event_chests_random_order",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": false,
+                "allow_actions": true
+            },
+            "tournaments": {
+                "name": "tournaments",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "welcome": {
+                "name": "welcome",
+                "is_active": true,
+                "start_at": "2026-07-01T08:00:00",
+                "end_at": "2026-08-03T20:59:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "auction_stub": {
+                "name": "auction_stub",
+                "is_active": false,
+                "start_at": "2020-12-18T05:00:00",
+                "end_at": "2020-12-18T13:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "seasons": {
+                "name": "seasons",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "clans_leaderboard_stub": {
+                "name": "clans_leaderboard_stub",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "tankopedia": {
+                "name": "tankopedia",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": false,
+                "allow_actions": false
+            },
+            "final_lan_buy_tickets_ui_active_2025": {
+                "name": "final_lan_buy_tickets_ui_active_2025",
+                "is_active": false,
+                "start_at": "2025-08-12T11:12:43",
+                "end_at": "2025-09-15T07:30:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_final_lan_header_customization": {
+                "name": "is_final_lan_header_customization",
+                "is_active": false,
+                "start_at": "2025-08-12T10:30:00",
+                "end_at": "2025-09-15T10:30:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "final_lan_2025": {
+                "name": "final_lan_2025",
+                "is_active": false,
+                "start_at": "2025-08-12T10:28:00",
+                "end_at": "2025-09-15T10:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_lizards_must_die_customization": {
+                "name": "is_lizards_must_die_customization",
+                "is_active": false,
+                "start_at": "2025-11-01T05:00:00",
+                "end_at": "2025-11-30T05:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_comics_selling": {
+                "name": "is_comics_selling",
+                "is_active": false,
+                "start_at": "2026-06-19T08:00:00",
+                "end_at": "2026-07-17T09:00:00",
+                "show_in_menu": true,
+                "allow_actions": false
+            },
+            "is_welcome": {
+                "name": "is_welcome",
+                "is_active": true,
+                "start_at": "2026-06-19T08:00:00",
+                "end_at": "2026-07-17T09:00:00",
+                "show_in_menu": true,
+                "allow_actions": false
+            },
+            "welcome_new_badge": {
+            "name": "welcome_new_badge",
+            "is_active": true,
+            "start_at": null,
+            "end_at": null,
+            "show_in_menu": true,
+            "allow_actions": true
+            },
+            "is_nav_customisation": {
+                "name": "is_nav_customisation",
+                "is_active": false,
+                "start_at": "2026-06-19T08:00:00",
+                "end_at": "2026-07-18T09:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_ny_2025_customization": {
+                "name": "is_ny_2025_customization",
+                "is_active": false,
+                "start_at": "2025-02-27T09:00:00",
+                "end_at": "2025-03-26T09:00:00",
+                "show_in_menu": false,
+                "allow_actions": true
+            },
+            "is_ny_navbar_customization": {
+                "name": "is_ny_navbar_customization",
+                "is_active": false,
+                "start_at": "2025-12-09T09:00:00",
+                "end_at": "2026-01-13T23:59:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "retro_v11": {
+                "name": "retro_v11",
+                "is_active": false,
+                "start_at": "2024-06-18T08:00:00",
+                "end_at": "2024-07-31T21:00:29",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "year_results": {
+                "name": "year_results",
+                "is_active": false,
+                "start_at": "2025-12-25T09:00:00",
+                "end_at": "2026-01-13T20:59:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_ice_giants_header_customization": {
+                "name": "is_ice_giants_header_customization",
+                "is_active": false,
+                "start_at": "2025-02-28T09:00:00",
+                "end_at": "2025-03-26T09:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "tournament_event": {
+                "name": "tournament_event",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": false,
+                "allow_actions": true
+            },
+            "auction": {
+                "name": "auction",
+                "is_active": false,
+                "start_at": "2023-12-15T05:37:30",
+                "end_at": "2024-01-08T05:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "comics": {
+                "name": "comics",
+                "is_active": false,
+                "start_at": "2025-02-28T09:00:00",
+                "end_at": "2026-02-28T07:56:01",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_cyber_village_customization": {
+                "name": "is_cyber_village_customization",
+                "is_active": false,
+                "start_at": "2026-03-04T14:00:00",
+                "end_at": "2026-04-01T03:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "promises_new_badge": {
+                "name": "promises_new_badge",
+                "is_active": false,
+                "start_at": "2026-07-01T08:00:00",
+                "end_at": "2026-07-02T08:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "promises": {
+                "name": "promises",
+                "is_active": false,
+                "start_at": "2026-07-01T08:00:00",
+                "end_at": "2026-07-03T20:59:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_stalcraft_customisation": {
+                "name": "is_stalcraft_customisation",
+                "is_active": false,
+                "start_at": "2026-04-08T13:03:01",
+                "end_at": "2026-04-29T21:00:01",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_victory_day_header_customization": {
+                "name": "is_victory_day_header_customization",
+                "is_active": false,
+                "start_at": "2026-05-08T00:00:00",
+                "end_at": "2026-05-11T00:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "rating_battles_leaderboard": {
+                "name": "rating_battles_leaderboard",
+                "is_active": false,
+                "start_at": "2024-08-27T11:52:30",
+                "end_at": "2024-08-29T06:00:02",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "forecasts": {
+                "name": "forecasts",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "quest": {
+                "name": "quest",
+                "is_active": false,
+                "start_at": "2025-07-01T09:00:00",
+                "end_at": "2025-08-10T12:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "clans_leaderboard": {
+                "name": "clans_leaderboard",
+                "is_active": false,
+                "start_at": "2024-08-27T11:53:15",
+                "end_at": "2024-08-29T06:00:17",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "gifts": {
+                "name": "gifts",
+                "is_active": false,
+                "start_at": "2026-05-28T11:00:00",
+                "end_at": "2026-07-29T05:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "comics_new_badge": {
+                "name": "comics_new_badge",
+                "is_active": false,
+                "start_at": "2026-06-19T08:00:00",
+                "end_at": "2026-06-20T08:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            }
+            }` || '{}'),
+            FOOTER: JSON.parse('{"id": 1, "name": "footer 2025", "text": "Aifemu, 2024 — 2026. Проект Project Blitz основана на интеллектуальной собственности третьих лиц. Все права на объекты прав третьих лиц принадлежат их законным правообладателям..", "start_date": "2026-01-01"}' || '{}'),
+            YA_METRIKA_COUNTER_IDS: {},
+            ADMIN_CDN_URL: 'https://cdn-ptl-media.tanksblitz.ru',
+            GLOSSARY_CDN_URL: 'https://glossary-static.lesta.ru',
+            EXTERNAL_APIS: {"wbpbe": {"url": {"ru": "https://ru-lwbpbe.lstprod.net", "rb": "https://ru-lwbpbe.lstprod.net"}, "use_lang": true, "single_realm": false}, "watch-blitz": {"url": {"ru": "https://fake-watchblitz-ru.tanksblitz.ru"}, "use_lang": false, "single_realm": false}, "watch-blitz-ws": {"url": {"ru": "https://fake-watchblitz-ru.tanksblitz.ru"}, "use_lang": false, "single_realm": false}},
+            PROBLEM_TRACKER_ENABLED: true,
+            PROBLEM_TRACKER_URL: 'https://fake.it',
+            PROBLEM_TRACKER_NOTIFY_TIMEOUT: 10,
+            SENTRY_DSN: 'https://4d028fffc4824d1db911a0182a6fd6b2:f5834e0e3e254d9d8ed408a26818b6a1@sentry.lstprod.net/73',
+            IS_CHINESE: false,
+            FOOTER_LOGO_LINK: 'https://lesta.ru',
+            PREMIUM_SHOP_LINK: 'https://lesta.ru/shop/wotb'
+        };
+        var context = {
+            "is_preview": false,
+            "news_page": {
+                "category": {
+                    "important": false,
+                    "lang": "ru",
+                    "order": 0,
+                    "slug": "updates",
+                    "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                },
+                "content": "\u003cdiv\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp\u003e\u0417\u0430\u0433\u0440\u0443\u0436\u0430\u0439 \u043d\u043e\u0432\u0443\u044e \u0432\u0435\u0440\u0441\u0438\u044e \u0441 27 \u043c\u0430\u044f\u003c/p\u003e\u003c/blockquote\u003e\u003ch2\u003e\u041a\u0430\u043a \u0441\u0442\u0430\u0442\u044c \u0438\u0441\u0442\u0438\u043d\u043d\u044b\u043c \u043c\u0430\u0441\u0442\u0435\u0440\u043e\u043c \u0432 Tanks Blitz?\u003c/h2\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u200b\u0413\u043e\u0432\u043e\u0440\u044f\u0442, \u0447\u0442\u043e\u0431\u044b \u043f\u043e\u0431\u0435\u0436\u0434\u0430\u0442\u044c, \u043d\u0443\u0436\u043d\u043e \u043e\u0431\u0440\u0435\u0441\u0442\u0438 \u0433\u0430\u0440\u043c\u043e\u043d\u0438\u044e. \u041d\u043e \u043a\u0430\u043a\u0430\u044f \u0433\u0430\u0440\u043c\u043e\u043d\u0438\u044f, \u043a\u043e\u0433\u0434\u0430 \u0432 \u0431\u043e\u0440\u0442 \u043b\u0435\u0442\u0438\u0442 \u0444\u0443\u0433\u0430\u0441, \u0430 \u0432\u043e\u043a\u0440\u0443\u0433 \u0432\u0437\u0440\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u0431\u043e\u0435\u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b? \u0414\u0430-\u0430, \u043d\u0430\u0439\u0442\u0438 \u0434\u0437\u0435\u043d \u0432 \u0442\u0430\u043a\u0438\u0445 \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445 \u2014 \u0437\u0430\u0434\u0430\u0447\u0430 \u043d\u0435\u043f\u0440\u043e\u0441\u0442\u0430\u044f. \u041f\u043e\u044d\u0442\u043e\u043c\u0443 \u0432 \u044d\u0442\u043e\u043c \u043c\u0435\u0441\u044f\u0446\u0435 \u043c\u044b \u0440\u0435\u0448\u0438\u043b\u0438 \u043f\u043e\u043c\u043e\u0447\u044c \u0442\u0435\u0431\u0435 \u0441 \u043f\u043e\u0438\u0441\u043a\u043e\u043c \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0435\u0433\u043e \u0440\u0430\u0432\u043d\u043e\u0432\u0435\u0441\u0438\u044f. \u041d\u043e \u0447\u0442\u043e\u0431\u044b \u0434\u043e\u0441\u0442\u0438\u0447\u044c \u0438 \u0443\u0434\u0435\u0440\u0436\u0430\u0442\u044c \u0435\u0433\u043e, \u043f\u0440\u0438\u0434\u0451\u0442\u0441\u044f \u0445\u043e\u0440\u043e\u0448\u0435\u043d\u044c\u043a\u043e \u0437\u0430\u043a\u0430\u043b\u0438\u0442\u044c \u0434\u0443\u0445 \u0438 \u0442\u0435\u043b\u043e. \u0411\u043b\u0430\u0433\u043e \u0432 \u0438\u044e\u043d\u0435 \u0434\u043b\u044f \u044d\u0442\u043e\u0433\u043e \u0431\u0443\u0434\u0435\u0442 \u0432\u0441\u0451 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e\u0435: \u0442\u0435\u0431\u044f \u0436\u0434\u0451\u0442 \u043a\u0440\u0443\u0442\u043e\u0439 \u042d\u043f\u0438\u0437\u043e\u0434, \u043a\u0443\u0447\u0430 \u0441\u043e\u0431\u044b\u0442\u0438\u0439, \u043a\u0432\u0435\u0441\u0442\u044b \u0438 \u0430\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u0438. \u0414\u0430\u0432\u0430\u0439 \u043f\u0440\u043e\u0439\u0434\u0435\u043c\u0441\u044f \u043f\u043e \u043e\u0441\u043d\u043e\u0432\u043d\u044b\u043c \u043f\u0443\u043d\u043a\u0442\u0430\u043c.\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/divider_lotus.png\"\u003e\u003c/p\u003e\u003ch2\u003e\u003cstrong\u003e1. \u041f\u043e\u0433\u0440\u0443\u0436\u0435\u043d\u0438\u0435 \u0432 \u0430\u0442\u043c\u043e\u0441\u0444\u0435\u0440\u0443\u003c/strong\u003e\u003c/h2\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0418\u0441\u0442\u0438\u043d\u043d\u044b\u0439 \u043c\u0430\u0441\u0442\u0435\u0440 \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442 \u0441\u0432\u043e\u0439 \u043f\u0443\u0442\u044c \u0441 \u0447\u0438\u0441\u0442\u043e\u0439 \u0433\u043e\u043b\u043e\u0432\u044b \u0438 \u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f \u0441 \u043e\u043a\u0440\u0443\u0436\u0430\u044e\u0449\u0438\u043c \u043c\u0438\u0440\u043e\u043c. \u0412\u0440\u0435\u043c\u044f \u043e\u0446\u0435\u043d\u0438\u0442\u044c \u043d\u043e\u0432\u0443\u044e \u0430\u0442\u043c\u043e\u0441\u0444\u0435\u0440\u0443 \u0438\u0433\u0440\u044b.\u003c/p\u003e\u003ch3\u003e\u003cstrong\u003e\u0412\u0441\u0442\u0440\u0435\u0447\u0430\u0439 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e \u0438\u043a\u043e\u043d\u043a\u0435\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041f\u043e\u043b\u044e\u0431\u0443\u0439\u0441\u044f \u043d\u043e\u0432\u043e\u0439 \u044e\u0431\u0438\u043b\u0435\u0439\u043d\u043e\u0439 \u0438\u043a\u043e\u043d\u043a\u043e\u0439 Tanks Blitz \u043d\u0430 \u044d\u043a\u0440\u0430\u043d\u0435 \u0441\u0432\u043e\u0435\u0433\u043e \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430. \u041d\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0439\u0441\u044f \u043d\u0430 \u043f\u043e\u0431\u0435\u0434\u043d\u0443\u044e \u043a\u0430\u0442\u043a\u0443 \u043f\u0440\u044f\u043c\u043e \u0441\u043e \u0441\u0442\u0430\u0440\u0442\u0430!\u003c/p\u003e\u003cp style=\"text-align: center; text-align: center; text-align: center; text-align: center; text-align: center; text-align: center; text-align: center; text-align: center; text-align: center; text-align: justify; text-align: center; text-align: center; text-align: center; text-align: center; text-align: center; text-align: center; text-align: center\"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/UPDATE_Rework_Stores_Icon_update_MacOS_iOS_GP_Flexion_rustor_LG_SPb_TB.png\" style=\"width: 100px;\"\u003e\u003c/p\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0423\u0432\u0438\u0434\u0438\u0448\u044c \u043d\u043e\u0432\u0443\u044e \u0438\u043a\u043e\u043d\u043a\u0443 \u0443\u0436\u0435 27 \u043c\u0430\u044f\u003c/p\u003e\u003c/blockquote\u003e\u003chr\u003e\u003ch3\u003e\u003cstrong\u003e\u041f\u043e\u0439\u043c\u0430\u0439 \u0434\u0437\u0435\u043d \u0432 \u0410\u043d\u0433\u0430\u0440\u0435\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0412 \u0410\u043d\u0433\u0430\u0440\u0435 \u0442\u0435\u043f\u0435\u0440\u044c \u043c\u0435\u043d\u044f\u0435\u0442\u0441\u044f \u043f\u043e\u0433\u043e\u0434\u0430. \u0421\u0442\u0430\u043b\u043e \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043a\u043e \u0430\u0442\u043c\u043e\u0441\u0444\u0435\u0440\u043d\u043e, \u0447\u0442\u043e \u043c\u043e\u0436\u043d\u043e \u043f\u0440\u043e\u0441\u0442\u043e \u0441\u0442\u043e\u044f\u0442\u044c \u0438 \u0437\u0430\u043b\u0438\u043f\u0430\u0442\u044c \u0447\u0430\u0441\u0430\u043c\u0438! \u041b\u043e\u0432\u0438 \u043b\u0443\u0447\u0438 \u0441\u043e\u043b\u043d\u0446\u0430, \u043c\u0435\u0434\u0438\u0442\u0438\u0440\u0443\u0439 \u043f\u043e\u0434 \u0448\u0443\u043c \u0434\u043e\u0436\u0434\u044f \u0438\u043b\u0438 \u0441\u043e\u0437\u0435\u0440\u0446\u0430\u0439 \u0437\u0430\u0432\u043e\u0440\u0430\u0436\u0438\u0432\u0430\u044e\u0449\u0435\u0435 \u0441\u0435\u0432\u0435\u0440\u043d\u043e\u0435 \u0441\u0438\u044f\u043d\u0438\u0435 \u2013 \u0438 \u043f\u0443\u0441\u0442\u044c \u0432\u0435\u0441\u044c \u043c\u0438\u0440 \u043f\u043e\u0434\u043e\u0436\u0434\u0451\u0442.\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/weather.gif\"\u003e\u003c/p\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041d\u0430\u0431\u043b\u044e\u0434\u0430\u0439 \u0437\u0430 \u0441\u043c\u0435\u043d\u043e\u0439 \u043f\u043e\u0433\u043e\u0434\u044b \u0432 \u0410\u043d\u0433\u0430\u0440\u0435 \u0441 27 \u043c\u0430\u044f\u003c/p\u003e\u003c/blockquote\u003e\u003chr\u003e\u003ch3\u003e\u003cstrong\u003e\u041f\u0440\u0438\u0441\u043b\u0443\u0448\u0430\u0439\u0441\u044f \u043a \u0433\u043e\u043b\u043e\u0441\u0443 \u043f\u0440\u0438\u0440\u043e\u0434\u044b \u0438 Tanks Blitz\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041d\u0430\u0441\u0442\u043e\u044f\u0449\u0438\u0439 \u043c\u0430\u0441\u0442\u0435\u0440 \u0437\u043d\u0430\u0435\u0442 \u0441\u0438\u043b\u0443 \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0435\u0433\u043e \u0441\u043f\u043e\u043a\u043e\u0439\u0441\u0442\u0432\u0438\u044f \u0438 \u0447\u0435\u0440\u043f\u0430\u0435\u0442 \u0435\u0433\u043e \u0438\u0437 \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u044f.\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041d\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0439\u0441\u044f \u043d\u0430 \u043f\u043e\u0431\u0435\u0434\u0443 \u043f\u043e\u0434 \u043d\u043e\u0432\u0443\u044e \u043c\u0443\u0437\u044b\u043a\u0443 \u043d\u0430 \u044d\u043a\u0440\u0430\u043d\u0430\u0445 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u043a\u0430\u0440\u0442:\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041a\u0430\u0440\u0442\u0430 \u00ab\u041a\u0430\u043d\u044c\u043e\u043d\u00bb\u003c/p\u003e\u003caudio src=\"https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/Canyon_sound.mp3\" controls=\"controls\"\u003e\u003c/audio\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041a\u0430\u0440\u0442\u0430 \u00ab\u041f\u043e\u0440\u0442\u00bb\u003c/p\u003e\u003caudio src=\"https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/Port_sound.mp3\" controls=\"controls\"\u003e\u003c/audio\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041a\u0430\u0440\u0442\u0430 \u00ab\u041b\u0430\u0433\u0443\u043d\u0430\u00bb\u003c/p\u003e\u003caudio src=\"https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/Lagoon_sound.mp3\" controls=\"controls\"\u003e\u003c/audio\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0418\u0449\u0438 \u043e\u0437\u0430\u0440\u0435\u043d\u0438\u0435 \u043f\u043e\u0434 \u0437\u0432\u0443\u043a\u0438 \u043f\u0440\u0438\u0440\u043e\u0434\u044b \u0432 \u0410\u043d\u0433\u0430\u0440\u0435, \u0432\u0435\u0434\u044c \u0442\u0435\u043f\u0435\u0440\u044c \u043a\u0430\u0436\u0434\u044b\u0439 \u0441\u0435\u0437\u043e\u043d \u0438 \u0432\u0440\u0435\u043c\u044f \u0441\u0443\u0442\u043e\u043a \u0437\u0434\u0435\u0441\u044c \u0437\u0432\u0443\u0447\u0430\u0442 \u043f\u043e-\u0441\u0432\u043e\u0435\u043c\u0443 \u2014 \u043f\u043e\u043b\u043d\u043e\u0435 \u043f\u043e\u0433\u0440\u0443\u0436\u0435\u043d\u0438\u0435 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u043e:\u003c/p\u003e\u003caudio src=\"https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/weather.mp3\" controls=\"controls\"\u003e\u003c/audio\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041d\u043e\u0432\u044b\u0435 \u0437\u0432\u0443\u043a\u0438 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b \u0432 \u0438\u0433\u0440\u0435 \u0441 27 \u043c\u0430\u044f\u003c/p\u003e\u003c/blockquote\u003e\u003chr\u003e\u003ch3\u003e\u003cstrong\u003e\u041e\u0446\u0435\u043d\u0438 \u043d\u043e\u0432\u044b\u0435 \u043e\u0431\u0440\u0430\u0437\u044b\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0412\u0441\u0435 \u0434\u043e\u043b\u0436\u043d\u043e \u043f\u0440\u0435\u0431\u044b\u0432\u0430\u0442\u044c \u0432 \u0433\u0430\u0440\u043c\u043e\u043d\u0438\u0438: \u0438 \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0439 \u043c\u0438\u0440, \u0438 \u0432\u043d\u0435\u0448\u043d\u0438\u0439 \u0432\u0438\u0434. \u0417\u0430\u0446\u0435\u043d\u0438 \u043a\u0430\u043a\u0438\u0435 \u043a\u0430\u043c\u0443\u0444\u043b\u044f\u0436\u0438 \u0441\u043c\u043e\u0436\u0435\u0448\u044c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0432 \u0438\u044e\u043d\u044c\u0441\u043a\u0438\u0445 \u0441\u043e\u0431\u044b\u0442\u0438\u044f\u0445 \u0438 \u0430\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u044f\u0445.\u003c/p\u003e\u003cgallery uuid=\"d1dd992c-7fbc-4ac8-addc-1fc289d4df3d\"\u003e\u003c/gallery\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041d\u043e\u0432\u044b\u0435 \u043a\u0430\u043c\u0443\u0444\u043b\u044f\u0436\u0438 \u043f\u043e\u044f\u0432\u044f\u0442\u0441\u044f \u0432 \u0438\u0433\u0440\u0435 \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u0441\u043e\u0431\u044b\u0442\u0438\u044f\u043c\u0438, \u043f\u0440\u043e \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0443\u0437\u043d\u0430\u0435\u0448\u044c \u043d\u0438\u0436\u0435\ud83d\udc47\u003c/p\u003e\u003c/blockquote\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/divider_tank.png\"\u003e\u003c/p\u003e\u003ch2\u003e\u003cstrong\u003e2. \u0418\u0441\u043f\u044b\u0442\u0430\u043d\u0438\u0435 \u0431\u043e\u0435\u043c\u003c/strong\u003e\u003c/h2\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0420\u0430\u0437\u0443\u043c \u0447\u0438\u0441\u0442, \u0447\u0443\u0432\u0441\u0442\u0432\u0430 \u043e\u0431\u043e\u0441\u0442\u0440\u0435\u043d\u044b \u2014 \u043f\u043e\u0440\u0430 \u0432\u044b\u0445\u043e\u0434\u0438\u0442\u044c \u043d\u0430 \u043f\u043e\u043b\u0435 \u0431\u043e\u044f, \u043f\u0440\u043e\u044f\u0432\u0438\u0442\u044c \u0441\u0442\u043e\u0439\u043a\u043e\u0441\u0442\u044c, \u043f\u043e\u043a\u043e\u0440\u0438\u0442\u044c \u0441\u0442\u0438\u0445\u0438\u0438 \u0438 \u043e\u0442\u0442\u043e\u0447\u0438\u0442\u044c \u0442\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043c\u0430\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u043e.\u003c/p\u003e\u003ch3\u003e\u003cstrong\u003e\u041f\u0440\u043e\u0439\u0434\u0438 \u00ab\u041f\u0443\u0442\u044c \u0433\u0435\u0440\u043e\u044f\u00bb\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041a\u043e\u0433\u0434\u0430-\u0442\u043e \u0447\u0435\u0442\u044b\u0440\u0435 \u0442\u0438\u043f\u0430 \u0442\u0435\u0445\u043d\u0438\u043a\u0438 \u0436\u0438\u043b\u0438 \u0432 \u043c\u0438\u0440\u0435, \u043d\u043e \u0431\u0430\u043b\u0430\u043d\u0441 \u0440\u0443\u0445\u043d\u0443\u043b, \u043a\u043e\u0433\u0434\u0430 \u043e\u0434\u0438\u043d \u0438\u0437 \u043d\u0438\u0445 \u043e\u0431\u044a\u044f\u0432\u0438\u043b \u0441\u0435\u0431\u044f \u0435\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u043c\u0430\u0441\u0442\u0435\u0440\u043e\u043c Tanks Blitz. \u041f\u0440\u0438\u0448\u043b\u043e \u0432\u0440\u0435\u043c\u044f \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0440\u0430\u0432\u043d\u043e\u0432\u0435\u0441\u0438\u0435: \u0432 \u043d\u043e\u0432\u043e\u043c \u042d\u043f\u0438\u0437\u043e\u0434\u0435 \u043f\u0440\u043e\u0439\u0434\u0438 \u043f\u0443\u0442\u044c \u0441\u043a\u0432\u043e\u0437\u044c \u043e\u0433\u043e\u043d\u044c, \u0432\u043e\u0434\u0443 \u0438 \u044f\u0440\u043e\u0441\u0442\u043d\u044b\u0439 \u0432\u0435\u0442\u0435\u0440. \u0414\u043e\u043a\u0430\u0436\u0438, \u0447\u0442\u043e \u0442\u0438\u0442\u0443\u043b \u0438\u0441\u0442\u0438\u043d\u043d\u043e\u0433\u043e \u043c\u0430\u0441\u0442\u0435\u0440\u0430 \u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u0438\u0442 \u0442\u043e\u043c\u0443, \u043a\u0442\u043e \u0431\u044c\u0451\u0442\u0441\u044f \u043f\u043b\u0435\u0447\u043e\u043c \u043a \u043f\u043b\u0435\u0447\u0443 \u0441 \u0441\u043e\u044e\u0437\u043d\u0438\u043a\u0430\u043c\u0438, \u0438 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u044c \u0438\u0441\u0442\u0438\u043d\u043d\u043e \u00ab\u041f\u0435\u0440\u0435\u0440\u043e\u0436\u0434\u0435\u043d\u043d\u044b\u043c\u00bb.\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/Battle_PassSeason_26_06_Bundles_v1_1920x1080_LG_SPb_TB.jpg\"\u003e\u003c/p\u003e\u003ch3\u003e\u003cstrong\u003e\u041f\u0440\u043e\u0431\u0443\u0434\u0438 \u0434\u0440\u0435\u0432\u043d\u044e\u044e \u0441\u0438\u043b\u0443\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0421\u043b\u0435\u0434\u043e\u043c \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0441\u044f \u043d\u0430 \u043f\u043e\u0438\u0441\u043a\u0438 \u0434\u0440\u0435\u043c\u043b\u044e\u0449\u0435\u0439 \u0441\u0438\u043b\u044b \u0432 \u0441\u043e\u0431\u044b\u0442\u0438\u0438 \u00ab\u041f\u0440\u043e\u0431\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u044d\u043d\u0435\u0440\u0433\u0438\u0438\u00bb: \u043d\u0430\u0431\u0438\u0432\u0430\u0439 \u0443\u0440\u043e\u043d, \u0434\u043e\u0431\u044b\u0432\u0430\u0439 \u0414\u0440\u0435\u0432\u043d\u0438\u0435 \u043a\u043b\u044e\u0447\u0438, \u0441\u043e\u0431\u0438\u0440\u0430\u0439 \u0422\u0430\u0439\u043d\u044b\u0435 \u043f\u0435\u0447\u0430\u0442\u0438 \u0438 \u0440\u0430\u0441\u043a\u0440\u044b\u0432\u0430\u0439 \u0441\u0435\u043a\u0440\u0435\u0442 \u043c\u043e\u0433\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u00ab\u042d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043b\u044f\u00bb.\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/Buttle_Map_Quest_screen.jpg\"\u003e\u003c/p\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0422\u0432\u043e\u0439 \u00ab\u041f\u0443\u0442\u044c \u0433\u0435\u0440\u043e\u044f\u00bb \u043f\u0440\u043e\u0439\u0434\u0451\u0442 \u0441 1 \u043f\u043e 30 \u0438\u044e\u043d\u044f, \u0430 \u00ab\u041f\u0440\u043e\u0431\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u044d\u043d\u0435\u0440\u0433\u0438\u0438\u00bb \u2014 \u0441 15 \u0438\u044e\u043d\u044f \u043f\u043e 5 \u0438\u044e\u043b\u044f.\u003c/p\u003e\u003c/blockquote\u003e\u003chr\u003e\u003ch3\u003e\u003cstrong\u003e\u0417\u0430\u0446\u0438\u043a\u043b\u0438\u0441\u044c \u043d\u0430 \u0441\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u0441\u0442\u0432\u043e\u0432\u0430\u043d\u0438\u0438\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u0435 \u043c\u0430\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u043e \u0438 \u0438\u0434\u0435\u0430\u043b\u044c\u043d\u044b\u0439 \u0431\u0430\u043b\u0430\u043d\u0441 \u043a\u0440\u043e\u044e\u0442\u0441\u044f \u0432 \u0442\u044b\u0441\u044f\u0447\u0430\u0445 \u043f\u043e\u0432\u0442\u043e\u0440\u0435\u043d\u0438\u0439 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043d\u043e\u0433\u043e. \u0423\u0447\u0430\u0441\u0442\u0432\u0443\u0439 \u0432 \u043e\u0441\u043e\u0431\u043e\u043c \u0437\u0430\u0446\u0438\u043a\u043b\u0435\u043d\u043d\u043e\u043c \u043a\u0432\u0435\u0441\u0442\u0435: \u043f\u0440\u0435\u043e\u0434\u043e\u043b\u0435\u0439 \u0432\u0435\u0441\u044c \u043f\u0443\u0442\u044c \u0438\u0437 8 \u044d\u0442\u0430\u043f\u043e\u0432, \u0441\u043e\u0431\u0435\u0440\u0438 \u043d\u0430\u0433\u0440\u0430\u0434\u044b, \u0438 \u0442\u0443\u0442 \u0436\u0435 \u043d\u0430\u0447\u043d\u0438 \u043a\u0440\u0443\u0433 \u0437\u0430\u043d\u043e\u0432\u043e, \u0441\u0442\u0430\u043d\u043e\u0432\u044f\u0441\u044c \u0432\u0441\u0435 \u0441\u0438\u043b\u044c\u043d\u0435\u0435 \u0441 \u043a\u0430\u0436\u0434\u044b\u043c \u0440\u0430\u0437\u043e\u043c. \u0421\u043a\u043e\u043b\u044c\u043a\u043e \u043a\u0440\u0443\u0433\u043e\u0432 \u0443\u0441\u043f\u0435\u0435\u0448\u044c \u043f\u0440\u043e\u0439\u0442\u0438?\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/News_Cycle_Quest_1920x1080_LG_SPb_TB.jpg\"\u003e\u003c/p\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0417\u0430\u0446\u0438\u043a\u043b\u0435\u043d\u043d\u044b\u0439 \u043a\u0432\u0435\u0441\u0442 \u043f\u0440\u043e\u0439\u0434\u0451\u0442 \u0441 2 \u0438\u044e\u043d\u044f, 11:00 (\u041c\u0421\u041a) \u043f\u043e 9 \u0438\u044e\u043d\u044f, 11:00 (\u041c\u0421\u041a)\u003c/p\u003e\u003c/blockquote\u003e\u003chr\u003e\u003ch3\u003e\u003cstrong\u003e\u0423\u0441\u0442\u0440\u043e\u0439 \u00ab\u0420\u0430\u0437\u0431\u043b\u043e\u0433\u0438\u0440\u043e\u0432\u043a\u0443\u00bb \u0432 \u0440\u0430\u043d\u0434\u043e\u043c\u0435\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041a\u0430\u043a\u0430\u044f \u0436\u0435 \u0437\u0430\u043a\u0430\u043b\u043a\u0430 \u0434\u0443\u0445\u0430 \u0431\u0435\u0437 \u0445\u043e\u0440\u043e\u0448\u0435\u0439 \u0431\u0438\u0442\u0432\u044b? \u0413\u043e\u0442\u043e\u0432\u044c \u00ab\u0434\u0435\u0441\u044f\u0442\u043a\u0438\u00bb \u2014 \u043c\u044b \u043e\u0431\u044a\u044f\u0432\u043b\u044f\u0435\u043c \u00ab\u0420\u0430\u0437\u0431\u043b\u043e\u0433\u0438\u0440\u043e\u0432\u043a\u0443\u00bb! \u0412 \u044d\u0442\u043e\u043c \u0441\u043e\u0431\u044b\u0442\u0438\u0435 \u0437\u043e\u043b\u043e\u0442\u043e \u0440\u0430\u0437\u0434\u0430\u044e\u0442 \u0431\u0443\u043a\u0432\u0430\u043b\u044c\u043d\u043e \u0437\u0430 \u0432\u0441\u0451. \u041f\u043e\u043f\u0430\u043b \u0432 \u043e\u0434\u0438\u043d \u0431\u043e\u0439 \u0441 \u0431\u043b\u043e\u0433\u0435\u0440\u043e\u043c? \u041b\u043e\u0432\u0438 \u003ccurrency count=\"250\" type=\"gold\"\u003e\u003c/currency\u003e. \u041f\u043e\u0431\u0435\u0434\u0438\u043b? \u0415\u0449\u0451 \u0441\u0432\u0435\u0440\u0445\u0443! \u041e\u0442\u043f\u0440\u0430\u0432\u0438\u043b \u0431\u043b\u043e\u0433\u0435\u0440\u0430 \u0432 \u0410\u043d\u0433\u0430\u0440 \u0438\u043b\u0438, \u043d\u0430\u043e\u0431\u043e\u0440\u043e\u0442, \u0437\u0430\u0449\u0438\u0442\u0438\u043b \u043e\u0442 \u043f\u0440\u043e\u0431\u0438\u0442\u0438\u0439 \u0438 \u043f\u0440\u0438\u0432\u0451\u043b \u043a \u043f\u043e\u0431\u0435\u0434\u0435? \u0421\u043d\u043e\u0432\u0430 \u0437\u043e\u043b\u043e\u0442\u043e! \u0410 \u0435\u0441\u043b\u0438 \u043d\u0430\u0441\u0442\u0440\u0435\u043b\u044f\u0435\u0448\u044c \u0431\u043e\u043b\u044c\u0448\u0435 \u0432\u0441\u0435\u0445 \u2014 \u0437\u0430\u0431\u0435\u0440\u0451\u0448\u044c \u0435\u0449\u0435 \u003ccurrency count=\"500\" type=\"gold\"\u003e\u003c/currency\u003e. \u041d\u0430\u0431\u0438\u0432\u0430\u0439 \u043a\u0430\u0440\u043c\u0430\u043d\u044b!\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/Bloggers_BP_25_04_TMS_1920x1080_EG_Tash_TB.jpg\"\u003e\u003c/p\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041e\u0445\u043e\u0442\u0430 \u043d\u0430 \u0431\u043b\u043e\u0433\u0435\u0440\u043e\u0432 \u043f\u0440\u043e\u0439\u0434\u0451\u0442 \u0441 12 \u0438\u044e\u043d\u044f (00:00 \u041c\u0421\u041a) \u043f\u043e 14 \u0438\u044e\u043d\u044f (23:59 \u041c\u0421\u041a)\u003c/p\u003e\u003c/blockquote\u003e\u003chr\u003e\u003ch3\u003e\u003cstrong\u003e\u0412\u043e\u0440\u0432\u0438\u0441\u044c \u0432 \u0421\u0435\u0437\u043e\u043d III \u041b\u0438\u0433\u0438 \u0411\u043b\u0438\u0446 \u041f\u043e\u0438\u043d\u0442\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0414\u043b\u044f \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u0433\u043e \u043c\u0430\u0441\u0442\u0435\u0440\u0430 \u0432\u0430\u0436\u043d\u043e \u0447\u0435\u0440\u043f\u0430\u0442\u044c \u043c\u0443\u0434\u0440\u043e\u0441\u0442\u044c \u0438\u0437 \u0440\u0430\u0437\u043d\u044b\u0445 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u0432. \u0423\u0447\u0438\u0441\u044c \u043d\u0430\u0431\u043b\u044e\u0434\u0430\u0442\u044c \u0437\u0430 \u0441\u0432\u043e\u0438\u043c\u0438 \u0441\u043e\u043f\u0435\u0440\u043d\u0438\u043a\u0430\u043c\u0438 \u2014 \u0438\u0437\u0443\u0447\u0430\u0439 \u0434\u0440\u0443\u0433\u0438\u0435 \u0442\u0430\u043a\u0442\u0438\u043a\u0438, \u0447\u0443\u0436\u0438\u0435 \u043f\u0440\u0438\u0451\u043c\u044b \u0438 \u0444\u0438\u0448\u043a\u0438 \u043a\u043e\u043c\u0430\u043d\u0434. \u0421\u043b\u0435\u0434\u0438 \u0437\u0430 \u0441\u043e\u0431\u044b\u0442\u0438\u044f\u043c\u0438 \u041b\u0438\u0433\u0438 \u0411\u043b\u0438\u0446 \u041f\u043e\u0438\u043d\u0442 \u0438 \u043f\u043e\u043b\u0443\u0447\u0430\u0439 \u043d\u0430\u0433\u0440\u0430\u0434\u044b \u0437\u0430 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440!\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/Blitz_Point_4.3_1920x1080_LG_SPb_TB.jpg\"\u003e\u003c/p\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0418\u0449\u0438 \u0432\u0441\u0435 \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438 \u0432 \u043d\u043e\u0432\u043e\u0441\u0442\u0438-\u0430\u043d\u043e\u043d\u0441\u0435 29 \u043c\u0430\u044f\u003c/p\u003e\u003c/blockquote\u003e\u003chr\u003e\u003ch3\u003e\u003cstrong\u003e\u041e\u0442\u043e\u0440\u0432\u0438\u0441\u044c \u0432 \u0443\u043b\u0451\u0442\u043d\u044b\u0445 \u0440\u0435\u0436\u0438\u043c\u0430\u0445\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041f\u0440\u043e\u0432\u0435\u0440\u044c, \u043d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u043d\u0435\u043f\u043e\u043a\u043e\u043b\u0435\u0431\u0438\u043c \u0442\u0432\u043e\u0439 \u0434\u0443\u0445 \u0432 \u044d\u043a\u0441\u0442\u0440\u0435\u043c\u0430\u043b\u044c\u043d\u044b\u0445 \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445.\u003c/p\u003e\u003cdiv style=\"text-align: center;\"\u003e\u003cdiv style=\"vertical-align: middle; display: inline-block; margin: 0px 15px 15px; width: 150px;\"\u003e\u003cdiv\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: center; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/game-mode-mad-games-320.webp\"\u003e\u003c/p\u003e\u003c/div\u003e\u003cdiv style=\"margin: 0px;\"\u003e\u003cp\u003eMad Games\u003cbr\u003e1\u003cspan style=\"color: rgb(159, 167, 168); font-size: 16px; font-family: Muller-Medium, Arial, Helvetica CY, Helvetica, sans-serif; font-size: 16px\"\u003e\u2013\u003c/span\u003e12 \u0438\u044e\u043d\u044f 8:00\u00a0(\u041c\u0421\u041a)\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"vertical-align: middle; display: inline-block; margin: 0px 15px 15px; width: 150px;\"\u003e\u003cdiv\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/game-mode-gladiatorskiy-320.webp\"\u003e\u003c/p\u003e\u003c/div\u003e\u003cdiv style=\"margin: 0px;\"\u003e\u003cp\u003e\u0413\u043b\u0430\u0434\u0438\u0430\u0442\u043e\u0440\u0441\u043a\u0438\u0439\u003cbr\u003e12\u003cspan style=\"color: rgb(159, 167, 168); font-size: 16px; font-family: Muller-Medium, Arial, Helvetica CY, Helvetica, sans-serif; font-size: 16px\"\u003e\u2013\u003c/span\u003e23 \u0438\u044e\u043d\u044f 8:00\u00a0(\u041c\u0421\u041a)\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/devider_gift.png\"\u003e\u003c/p\u003e\u003ch2\u003e\u003cstrong\u003e3. \u041d\u0430\u0433\u0440\u0430\u0434\u044b \u0438 \u043f\u043e\u0434\u0430\u0440\u043a\u0438\u003c/strong\u003e\u003c/h2\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041b\u044e\u0431\u043e\u0435 \u0438\u0441\u043f\u044b\u0442\u0430\u043d\u0438\u0435 \u0432\u0435\u0434\u0451\u0442 \u043a \u043d\u0430\u0433\u0440\u0430\u0434\u0435. \u041f\u043e\u0441\u043b\u0435 \u0436\u0430\u0440\u043a\u0438\u0445 \u0431\u043e\u0451\u0432 \u043d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0432\u0440\u0435\u043c\u044f \u0437\u0430\u0441\u043b\u0443\u0436\u0435\u043d\u043d\u043e\u0433\u043e \u043e\u0442\u0434\u044b\u0445\u0430, \u043f\u043e\u0434\u0430\u0440\u043a\u043e\u0432 \u0438 \u043f\u0440\u0438\u044f\u0442\u043d\u044b\u0445 \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u0439.\u003c/p\u003e\u003ch3\u003e\u003cstrong\u003e\u041e\u0442\u0434\u043e\u0445\u043d\u0438 \u043d\u0430 \u043f\u043b\u044f\u0436\u0435 \u0441 \u00ab\u041f\u043e\u0434\u0430\u0440\u043a\u0430\u043c\u0438 \u043f\u043e \u041a\u0414\u00bb\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0420\u0430\u0441\u0441\u043b\u0430\u0431\u044c\u0441\u044f \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u043d\u0430\u043c\u0438 \ud83c\udfd6\ufe0f. \u0412 \u0438\u044e\u043d\u0435 \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044f \u043b\u0435\u0433\u0435\u043d\u0434\u0430\u0440\u043d\u0430\u044f \u0440\u0430\u0437\u0434\u0430\u0447\u0430 \u00ab\u041f\u043e\u0434\u0430\u0440\u043a\u043e\u0432 \u043f\u043e \u041a\u0414\u00bb! \u0417\u0430\u0431\u0438\u0440\u0430\u0439 \u0411\u043e\u043a\u0441\u044b, \u0437\u043e\u043b\u043e\u0442\u043e, \u0434\u043d\u0438 \u041f\u0440\u0435\u043c\u0438\u0443\u043c \u0430\u043a\u043a\u0430\u0443\u043d\u0442\u0430, \u044f\u0440\u043a\u0438\u0435 \u043b\u0435\u0442\u043d\u0438\u0435 \u0430\u0432\u0430\u0442\u0430\u0440\u044b \u0438 \u0444\u043e\u043d\u044b \u043f\u0440\u043e\u0444\u0438\u043b\u044f \u2014 \u0442\u0443\u0442 \u0441\u0442\u043e\u043b\u044c\u043a\u043e \u0432\u0441\u0435\u0433\u043e, \u0447\u0442\u043e \u0430\u0436 \u043f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u044f\u0442\u044c \u0443\u0441\u0442\u0430\u043b\u0438.\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cstrong\u003e\u0421\u043e\u0432\u0435\u0442\u003c/strong\u003e \ud83d\udca1: \u0430\u043a\u0442\u0438\u0432\u043d\u043e \u043d\u0430\u0438\u0433\u0440\u044b\u0432\u0430\u0439 \u0431\u043e\u0438 \u0434\u043e 17 \u0438\u044e\u043d\u044f (23:59 \u041c\u0421\u041a). \u0427\u0435\u043c \u0431\u043e\u043b\u044c\u0448\u0435 \u0431\u043e\u0451\u0432 \u0443\u0441\u043f\u0435\u0435\u0448\u044c \u0441\u044b\u0433\u0440\u0430\u0442\u044c, \u0442\u0435\u043c \u0431\u043e\u043b\u044c\u0448\u0435 \u043f\u043e\u0434\u0430\u0440\u043a\u043e\u0432 \u0437\u0430\u0431\u0435\u0440\u0451\u0448\u044c!\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/KD-1920x1080_LG_SPb_TB.jpg\"\u003e\u003c/p\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041f\u043e\u0434\u0430\u0440\u043a\u0438 \u0440\u0430\u0437\u0434\u0430\u0451\u043c \u0441 22 \u0438\u044e\u043d\u044f, 8:00 (\u041c\u0421\u041a) \u043f\u043e 29 \u0438\u044e\u043b\u044f, 8:00 (\u041c\u0421\u041a)\u003c/p\u003e\u003c/blockquote\u003e\u003chr\u003e\u003ch3\u003e\u003cstrong\u003e\u0417\u0430\u0436\u0433\u0438 \u043d\u0430 \u00ab\u041b\u044f\u043c\u0444\u0435\u0441\u0442\u0435\u00bb\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041d\u0435 \u0437\u0430\u0431\u0443\u0434\u044c \u0437\u0430\u0433\u043b\u044f\u043d\u0443\u0442\u044c \u043d\u0430 \u043d\u0430\u0448 \u0443\u044e\u0442\u043d\u044b\u0439 \u0444\u0435\u0441\u0442\u0438\u0432\u0430\u043b\u044c \u00ab\u041b\u044f\u043c\u0444\u0435\u0441\u0442\u00bb! \u0412 \u044d\u0442\u043e\u0442 \u0440\u0430\u0437 \u0435\u0441\u0442\u044c \u0448\u0430\u043d\u0441 \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043f\u043e-\u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u043c\u0443 \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u043d\u044b\u0435 \u043f\u0440\u0438\u0437\u044b: \u003ccurrency count=\"1 000 000\" type=\"gold\"\u003e\u003c/currency\u003e \u0438 \u0442\u043e\u043f\u043e\u0432\u0443\u044e \u0442\u0435\u0445\u043d\u0438\u043a\u0443. \u0410 \u043d\u0430 \u043f\u0440\u0430\u0437\u0434\u043d\u0438\u0447\u043d\u043e\u043c \u0441\u0442\u0440\u0438\u043c\u0435 \u0442\u044b \u0441\u043c\u043e\u0436\u0435\u0448\u044c \u043f\u043e\u0431\u043e\u0440\u043e\u0442\u044c\u0441\u044f \u0437\u0430 \u043f\u0440\u0438\u0437\u043e\u0432\u043e\u0439 \u0444\u043e\u043d\u0434 \u0432 \u003cstrong\u003e1 000 000\u003c/strong\u003e \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0445 \u0440\u0443\u0431\u043b\u0435\u0439!\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/lottery_art_1920x1080.png\"\u003e\u003c/p\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0424\u0435\u0441\u0442\u0438\u0432\u0430\u043b\u044c \u043d\u0430\u0447\u043d\u0451\u0442\u0441\u044f 10 \u0438\u044e\u043d\u044f, 11:00 (\u041c\u0421\u041a)\u003c/p\u003e\u003c/blockquote\u003e\u003chr\u003e\u003ch3\u003e\u003cstrong\u003e\u0423\u0437\u043d\u0430\u0439, \u0447\u0442\u043e \u0431\u044b\u043b\u043e \u0434\u0430\u043b\u044c\u0448\u0435 \u0441 \u041b\u0435\u0434\u044f\u043d\u044b\u043c\u0438 \u0412\u0435\u043b\u0438\u043a\u0430\u043d\u0430\u043c\u0438 \u0438 \u0437\u0430\u0446\u0435\u043d\u0438 \u00ab\u041a\u0440\u0430\u0442\u043e\u0441\u0430\u00bb\u003c/strong\u003e\u003c/h3\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0414\u043e\u043b\u0433\u043e\u0436\u0434\u0430\u043d\u043d\u043e\u0435 \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u043a\u043e\u043c\u0438\u043a\u0441\u0430 \u043f\u0440\u043e \u0410\u0439\u0441\u0430 \u0438 \u0435\u0433\u043e \u0441\u043e\u043a\u043e\u043c\u0430\u043d\u0434\u043d\u0438\u043a\u043e\u0432 \u0443\u0436\u0435 \u0432 \u0438\u044e\u043d\u0435!\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/comics_art_1920x1080_LG_SPb_TB.jpg\"\u003e\u003c/p\u003e\u003cblockquote class=\"message-block\"\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u043a\u043e\u043c\u0438\u043a\u0441\u0430 \u0431\u0443\u0434\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u043e \u0441 19 \u0438\u044e\u043d\u044f.\u003c/p\u003e\u003c/blockquote\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0412 \u0447\u0435\u0441\u0442\u044c \u044d\u0442\u043e\u0433\u043e \u0441\u043e\u0431\u044b\u0442\u0438\u044f \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0439 \u043d\u043e\u0432\u0438\u0447\u043a\u0430 \u0432 Tanks Blitz. \u041f\u0440\u044f\u043c\u0438\u043a\u043e\u043c \u0441\u043e \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u043a\u043e\u043c\u0438\u043a\u0441\u0430 \u2014 \u043d\u0435\u0441\u043e\u043a\u0440\u0443\u0448\u0438\u043c\u044b\u0439 \u041b\u0412-915 \u041a\u0440\u0430\u0442\u043e\u0441. \u042d\u0442\u0430 \u0441\u0443\u0440\u043e\u0432\u0430\u044f \u041f\u0422-\u0421\u0410\u0423 IX \u0443\u0440\u043e\u0432\u043d\u044f \u043f\u043e\u0440\u0430\u0434\u0443\u0435\u0442 \u043f\u0440\u043e\u0447\u043d\u043e\u0439 \u0431\u0440\u043e\u043d\u0451\u0439, \u0432\u043d\u0443\u0448\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u043c \u0437\u0430\u043f\u0430\u0441\u043e\u043c \u0437\u0434\u043e\u0440\u043e\u0432\u044c\u044f \u0438 \u043e\u0442\u043b\u0438\u0447\u043d\u043e\u0439 \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c\u044e \u043f\u043e\u0432\u043e\u0440\u043e\u0442\u0430 \u043a\u043e\u0440\u043f\u0443\u0441\u0430.\u003c/p\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u003cimg src=\"//cdn-ptl-media.tanksblitz.ru/media/filer_public/images/LV915_new_tank.png\"\u003e\u003c/p\u003e\u003ch2\u003e4. \u0414\u043e\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f \u0438 \u0438\u0441\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0435 \u043e\u0448\u0438\u0431\u043a\u0438\u003c/h2\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0427\u0442\u043e\u0431\u044b \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043e\u0442\u0432\u043b\u0435\u043a\u0430\u043b\u043e \u0442\u0435\u0431\u044f \u043d\u0430 \u043f\u0443\u0442\u0438 \u043a \u0438\u0441\u0442\u0438\u043d\u043d\u043e\u043c\u0443 \u0431\u0430\u043b\u0430\u043d\u0441\u0443:\u003c/p\u003e\u003cul\u003e\u003cli\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \"\u003e\u0414\u043e\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u044b \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u0435 \u044d\u043a\u0440\u0430\u043d\u044b, \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u044f \u0438 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u044f\u003c/p\u003e\u003c/li\u003e\u003cli\u003e\u003cp style=\"text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; text-align: justify; \" class=\"MsoNormal\"\u003e\u003cspan style=\"font-size: 16px; font-size: 16px\"\u003e\u0418\u0441\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u044b \u043e\u0431\u0449\u0438\u0435 \u043e\u0448\u0438\u0431\u043a\u0438 \u0438 \u0440\u0435\u0448\u0435\u043d\u044b \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u044b \u0441 \u043f\u0430\u0434\u0435\u043d\u0438\u0435\u043c \u043a\u043b\u0438\u0435\u043d\u0442\u0430\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e",
+                "forum_link": "",
+                "id": 2853,
+                "images": {
+                    "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Update_client_26-6-Patchnote_news_1920x1080_LG_SPb_TB.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                    "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Update_client_26-6-Patchnote_news_1920x1080_LG_SPb_TB.jpg__455x256_q95_subsampling-2.jpg",
+                    "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Update_client_26-6-Patchnote_news_1920x1080_LG_SPb_TB.jpg__392x224_q95_crop_subsampling-2.jpg",
+                    "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Update_client_26-6-Patchnote_news_1920x1080_LG_SPb_TB.jpg__168x98_q95_crop_subsampling-2.jpg"
+                },
+                "is_hidden_image_banner": false,
+                "is_hidden_title_description": false,
+                "lang": "ru",
+                "name": "Update 26.6",
+                "pin_page": false,
+                "pin_weight": 0,
+                "publication_start_at": "2026-05-26T09:00:00",
+                "reactions_pack": {
+                    "name": "\u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442 \u0431\u0435\u0437 \u0434\u0438\u0437\u043b\u0430\u0439\u043a\u0430",
+                    "pack_icons": [{
+                        "count": 650,
+                        "id": 3,
+                        "image_url": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/reaction-base_like_m.png",
+                        "order": 1
+                    }, {
+                        "count": 60,
+                        "id": 4,
+                        "image_url": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/reaction-base_heart_m.png",
+                        "order": 2
+                    }, {
+                        "count": 78,
+                        "id": 5,
+                        "image_url": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/reaction-base_fire_m.png",
+                        "order": 3
+                    }, {
+                        "count": 60,
+                        "id": 6,
+                        "image_url": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/reaction-base_ha_m.png",
+                        "order": 4
+                    }, {
+                        "count": 12,
+                        "id": 7,
+                        "image_url": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/reaction-base_surprise_m_8LXeFoL.png",
+                        "order": 5
+                    }, {
+                        "count": 17,
+                        "id": 2,
+                        "image_url": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/reaction-base_melancholy_m.png",
+                        "order": 6
+                    }, {
+                        "count": 167,
+                        "id": 1,
+                        "image_url": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/reaction-base_anger_m.png",
+                        "order": 7
+                    }]
+                },
+                "related": [{
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 1957,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Chinese_LT_1920x1080_L.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Chinese_LT_1920x1080_L.jpg__455x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Chinese_LT_1920x1080_L.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Chinese_LT_1920x1080_L.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "\u041b\u0451\u0433\u043a\u0438\u0435 \u0442\u0430\u043d\u043a\u0438 \u041a\u0438\u0442\u0430\u044f",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2023-02-13T15:00:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "chinese_lt",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u041d\u043e\u0432\u0430\u044f \u0432\u0435\u0442\u043a\u0430 \u0441 \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u043e\u0439 \u043c\u0435\u0445\u0430\u043d\u0438\u043a\u043e\u0439 \u0437\u0430\u0441\u0432\u0435\u0442\u0430",
+                        "title": "\u041b\u0451\u0433\u043a\u0438\u0435 \u0442\u0430\u043d\u043a\u0438 \u041a\u0438\u0442\u0430\u044f"
+                    }
+                }, {
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 2036,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/10.1_1920x1080_LG_SPb_TB.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/10.1_1920x1080_LG_SPb_TB.jpg__455x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/10.1_1920x1080_LG_SPb_TB.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/10.1_1920x1080_LG_SPb_TB.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "Update 10.1",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2023-07-04T14:00:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "update-10-1",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u041d\u043e\u0432\u044b\u0439 \u0438\u0433\u0440\u043e\u0432\u043e\u0439 \u043e\u043f\u044b\u0442!",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 10.1"
+                    }
+                }, {
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 2012,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/38/aa/38aabb4e-8b05-4b61-b003-448a0b499a78/vehicle-changes.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/38/aa/38aabb4e-8b05-4b61-b003-448a0b499a78/vehicle-changes.jpg__455x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/38/aa/38aabb4e-8b05-4b61-b003-448a0b499a78/vehicle-changes.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/38/aa/38aabb4e-8b05-4b61-b003-448a0b499a78/vehicle-changes.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "\u0411\u0430\u043b\u0430\u043d\u0441\u043d\u044b\u0435 \u043f\u0440\u0430\u0432\u043a\u0438 10.0",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2023-05-23T14:40:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "vehicle-changes-10-0",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u041d\u043e\u0432\u044b\u0435 \u044d\u043c\u043e\u0446\u0438\u0438 \u043e\u0442 \u0438\u0433\u0440\u044b \u043d\u0430 \u0441\u0442\u0430\u0440\u044b\u0445 \u0442\u0430\u043d\u043a\u0430\u0445.",
+                        "title": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0438 \u0432 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0438 10.0"
+                    }
+                }, {
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 1887,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/matchmaker-9-4-1920-1080.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/matchmaker-9-4-1920-1080.jpg__455x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/matchmaker-9-4-1920-1080.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/matchmaker-9-4-1920-1080.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "Matchmaker 9.4",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2022-11-07T12:09:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "matchmaker-9-4",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u041d\u043e\u0432\u043e\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u043e \u043f\u043e\u0434\u0431\u043e\u0440\u0430 \u0438\u0433\u0440\u043e\u043a\u043e\u0432 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u044b",
+                        "title": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u0432 \u0440\u0430\u0431\u043e\u0442\u0435 \u0431\u0430\u043b\u0430\u043d\u0441\u0438\u0440\u043e\u0432\u0449\u0438\u043a\u0430 \u0432 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0438 9.4"
+                    }
+                }, {
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 1959,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/update_9.7_1920x1080_1.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/update_9.7_1920x1080_1.jpg__455x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/update_9.7_1920x1080_1.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/update_9.7_1920x1080_1.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "Update 9.7",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2023-02-14T12:00:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "update-9-7",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435 \u041b\u0422 \u0438 \u043e\u0431\u043d\u043e\u0432\u043b\u0451\u043d\u043d\u044b\u0439 \u041c\u0438\u0434\u0434\u043b\u0431\u0443\u0440\u0433.",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 9.7"
+                    }
+                }, {
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 2102,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/key-10.3.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/key-10.3.jpg__455x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/key-10.3.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/key-10.3.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 10.3",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2023-09-26T14:00:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "update-10-3",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u0422\u0432\u043e\u0439 \u043f\u0443\u0442\u044c \u0433\u0435\u0440\u043e\u044f \u0432 Tanks Blitz!",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 10.3"
+                    }
+                }, {
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 2188,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/new-announcement-preview.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/new-announcement-preview.jpg__455x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/new-announcement-preview.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/new-announcement-preview.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "Update 10.5",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2023-12-19T09:00:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "update-10-5",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u0417\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442\u0441\u044f \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438.",
+                        "title": "\u041d\u043e\u0432\u044b\u0439 \u043a\u043e\u043d\u0442\u0435\u043d\u0442!"
+                    }
+                }, {
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 1833,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/38/11/3811f708-9693-43a5-9a8c-bc643d4a88fd/announcement.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/38/11/3811f708-9693-43a5-9a8c-bc643d4a88fd/announcement.jpg__455x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/38/11/3811f708-9693-43a5-9a8c-bc643d4a88fd/announcement.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/38/11/3811f708-9693-43a5-9a8c-bc643d4a88fd/announcement.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "\u041e \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u043f\u0435\u0440\u0435\u043d\u043e\u0441\u0430 \u0430\u043a\u043a\u0430\u0443\u043d\u0442\u0430. \u0410\u043d\u043e\u043d\u0441",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2022-08-18T09:00:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "account-transfer",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u0412\u0430\u0436\u043d\u044b\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0438.",
+                        "title": "\u041e \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u043f\u0435\u0440\u0435\u043d\u043e\u0441\u0430 \u0430\u043a\u043a\u0430\u0443\u043d\u0442\u0430. \u0410\u043d\u043e\u043d\u0441"
+                    }
+                }, {
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 2269,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Other_Tanks_20481536.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Other_Tanks_20481536.jpg__341x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Other_Tanks_20481536.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Other_Tanks_20481536.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "\u041b\u0435\u0434\u044f\u043d\u044b\u0435 \u0412\u0435\u043b\u0438\u043a\u0430\u043d\u044b",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2024-04-26T15:00:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "ledyanye-velikany",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u0421\u043e\u043c\u043a\u043d\u0443\u0442\u044c \u0449\u0438\u0442\u044b!",
+                        "title": "\u041b\u0435\u0434\u044f\u043d\u044b\u0435 \u0412\u0435\u043b\u0438\u043a\u0430\u043d\u044b"
+                    }
+                }, {
+                    "category": {
+                        "important": false,
+                        "lang": "ru",
+                        "order": 0,
+                        "slug": "updates",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f"
+                    },
+                    "id": 1995,
+                    "images": {
+                        "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/announcement-preview.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                        "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/announcement-preview.jpg__455x256_q95_subsampling-2.jpg",
+                        "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/announcement-preview.jpg__392x224_q95_crop_subsampling-2.jpg",
+                        "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/announcement-preview.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "lang": "ru",
+                    "name": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 9.9",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2023-04-18T12:20:00",
+                    "reactions_pack": null,
+                    "show_timer": false,
+                    "slug": "update-april-23",
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "\u0412\u0441\u0435 \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438.",
+                        "title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435. \u0411\u0443\u0434\u044c \u0432 \u043a\u0443\u0440\u0441\u0435!"
+                    }
+                }],
+                "show_timer": false,
+                "slug": "update-26-6",
+                "status": 200,
+                "timer_end_at": null,
+                "timer_info": null,
+                "timer_start_at": null,
+                "translation": {
+                    "description": "\u0413\u043e\u0442\u043e\u0432 \u0441\u0442\u0430\u0442\u044c \u0438\u0441\u0442\u0438\u043d\u043d\u044b\u043c \u043c\u0430\u0441\u0442\u0435\u0440\u043e\u043c Tanks Blitz?",
+                    "title": "\u0413\u0430\u0440\u043c\u043e\u043d\u0438\u0447\u043d\u043e\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 26.6"
+                },
+                "vk_link": "https://vkvideo.ru/video-49033185_456318783",
+                "vk_preview": null,
+                "youtube_link": null
+            },
+            "stuff": {}
+        };
+
+
+
+
+
+window.onload = function() {
+    // 1. Монтируем Vue
+    window.mount('newsPage', false, context, window.wbpSettings);
+};
+(function() {
+function timeAgo(dateString) {
+    if (!dateString) return '';
+    
+    const now = new Date();
+    const past = new Date(dateString);
+    const diffMs = now - past;
+    const diffSec = Math.floor(diffMs / 1000);
+    const diffMin = Math.floor(diffSec / 60);
+    const diffHours = Math.floor(diffMin / 60);
+    const diffDays = Math.floor(diffHours / 24);
+    const diffMonths = Math.floor(diffDays / 30);
+    const diffYears = Math.floor(diffDays / 365);
+    
+    function pluralize(number, one, two, five) {
+        const n = Math.abs(number) % 100;
+        const n1 = n % 10;
+        if (n > 10 && n < 20) return five;
+        if (n1 > 1 && n1 < 5) return two;
+        if (n1 === 1) return one;
+        return five;
+    }
+    
+    if (diffYears >= 2) {
+        return diffYears + ' ' + pluralize(diffYears, 'год', 'года', 'лет') + ' назад';
+    } else if (diffYears >= 1) {
+        return 'год назад';
+    } else if (diffMonths >= 2) {
+        return diffMonths + ' ' + pluralize(diffMonths, 'месяц', 'месяца', 'месяцев') + ' назад';
+    } else if (diffMonths >= 1) {
+        return 'месяц назад';
+    } else if (diffDays >= 7) {
+        const weeks = Math.floor(diffDays / 7);
+        return weeks + ' ' + pluralize(weeks, 'неделя', 'недели', 'недель') + ' назад';
+    } else if (diffDays >= 2) {
+        return diffDays + ' ' + pluralize(diffDays, 'день', 'дня', 'дней') + ' назад';
+    } else if (diffDays >= 1) {
+        return 'вчера';
+    } else if (diffHours >= 2) {
+        return diffHours + ' ' + pluralize(diffHours, 'час', 'часа', 'часов') + ' назад';
+    } else if (diffHours >= 1) {
+        return 'час назад';
+    } else if (diffMin >= 2) {
+        return diffMin + ' ' + pluralize(diffMin, 'минута', 'минуты', 'минут') + ' назад';
+    } else if (diffMin >= 1) {
+        return 'минуту назад';
+    } else if (diffSec >= 5) {
+        return diffSec + ' ' + pluralize(diffSec, 'секунда', 'секунды', 'секунд') + ' назад';
+    } else {
+        return 'только что';
+    }
+}
+setTimeout(function() {
+    const container = document.querySelector('.news-page');
+    if (!container) return;
+    const news = context.news_page;
+    if (!news) return;
+    
+    let content = news.content;
+    
+    const currencyIcons = {
+        'gold': 'gold.png',
+        'silver': 'silver.png',
+        'freexp': 'freexp.png',
+        'premium': 'premium.png',
+        'elitexp': 'elitexp.png',
+        'crewxp': 'crewxp.png',
+        'battlexp': 'battlexp.png'
+    };
+    
+    content = content.replace(
+        /<currency count="([^"]+)" type="([^"]+)"><\/currency>/g,
+        function(match, count, type) {
+            const iconFile = currencyIcons[type] || 'gold.png';
+            return `<span class="currency-display" style="display:inline-flex;align-items:center;gap:6px;font-weight:bold;white-space:nowrap;">
+                ${count}<img src="../../../images/${iconFile}" alt="${type}" style="width:24px;height:24px;object-fit:contain;vertical-align:middle;flex-shrink:0;">
+            </span>`;
+        }
+    );
+    
+    container.innerHTML = `
+        <div>
+            <div class="news-page_item">
+                <article class="news">
+                    <div class="news_body">
+                        <h1>${news.translation?.title || news.name}</h1>
+                        <div class="news_content">${content}</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    `;
+    content = content.replace(
+        /<gallery uuid="([^"]+)"><\/gallery>/g,
+        function(match, uuid) {
+            var images = [
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/reborn_BP26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/river_BP26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/spark_battle_map_26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/stream_Battle_map_26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/winds_BP26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/elemental_battle_map_26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/lava_BP26.06.png'
+            ];
+            
+            var slidesHtml = '';
+var positions = [
+    { left: '80px', top: '110px', w: '140px', h: '90px', z: 996, op: 0.5 },
+    { left: '140px', top: '95px', w: '190px', h: '120px', z: 997, op: 0.7 },
+    { left: '210px', top: '70px', w: '260px', h: '170px', z: 998, op: 0.9 },
+    { center: true, top: '35px', w: '380px', h: '240px', z: 999, op: 1 },
+    { right: '210px', top: '70px', w: '260px', h: '170px', z: 998, op: 0.9 },
+    { right: '140px', top: '95px', w: '190px', h: '120px', z: 997, op: 0.7 },
+    { right: '80px', top: '110px', w: '140px', h: '90px', z: 996, op: 0.5 }
+];
+            
+            for (var i = 0; i < positions.length; i++) {
+                var pos = positions[i];
+                var style = 'position:absolute; width:' + pos.w + '; height:' + pos.h + '; z-index:' + pos.z + '; border-radius:8px; overflow:hidden; cursor:pointer; transition:all 0.5s ease;';
+                if (pos.center) {
+                    style += ' left:50%; transform:translateX(-50%); top:' + pos.top + ';';
+                } else if (pos.left) {
+                    style += ' left:' + pos.left + '; top:' + pos.top + ';';
+                } else {
+                    style += ' right:' + pos.right + '; top:' + pos.top + ';';
+                }
+                style += ' opacity:' + pos.op + ';';
+                
+                slidesHtml += '<div class="carousel-slide" data-index="' + i + '" style="' + style + '">' +
+                    '<div style="background-size:cover; background-image:url(' + images[i] + '); height:100%; width:100%;"></div>' +
+                '</div>';
+            }
+            
+            return '<div style="width:100%; overflow:visible; padding:20px 0; position:relative;">' +
+                '<div id="carousel-' + uuid + '" style="height:310px; position:relative; margin:0 auto; width:100%; max-width:900px; overflow:visible;">' +
+                slidesHtml +
+            '</div></div>';
+        }
+    );
+    
+    container.innerHTML = `
+        <div>
+            <div class="news-page_item">
+                <article class="news">
+                    <div class="news_body">
+                        <h1>${news.translation?.title || news.name}</h1>
+                        <div class="news_content">${content}</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    `;
+    
+    // Запускаем карусель после вставки в DOM
+    setTimeout(function() {
+        document.querySelectorAll('[id^="carousel-"]').forEach(function(container) {
+            var slides = container.querySelectorAll('.carousel-slide');
+            var totalSlides = slides.length;
+            var currentIndex = 3;
+            
+            function updateCarousel(newIndex) {
+                if (newIndex === currentIndex) return;
+                
+                slides.forEach(function(slide, i) {
+                    var offset = (i - newIndex + totalSlides) % totalSlides;
+                    if (offset > 3) offset -= totalSlides;
+                    
+                    var width, height, top, opacity, zIndex, leftPos, rightPos;
+                    
+                    switch(offset) {
+                        case -3: case 4:
+                            width = '140px'; height = '90px'; top = '110px'; opacity = 0.5; zIndex = 996; break;
+                        case -2: case 5:
+                            width = '190px'; height = '120px'; top = '95px'; opacity = 0.7; zIndex = 997; break;
+                        case -1: case 6:
+                            width = '260px'; height = '170px'; top = '70px'; opacity = 0.9; zIndex = 998; break;
+                        case 0:
+                            width = '380px'; height = '240px'; top = '35px'; opacity = 1; zIndex = 999; break;
+                        case 1:
+                            width = '260px'; height = '170px'; top = '70px'; opacity = 0.9; zIndex = 998; break;
+                        case 2:
+                            width = '190px'; height = '120px'; top = '95px'; opacity = 0.7; zIndex = 997; break;
+                        case 3:
+                            width = '140px'; height = '90px'; top = '110px'; opacity = 0.5; zIndex = 996; break;
+                        default:
+                            width = '140px'; height = '90px'; top = '110px'; opacity = 0.3; zIndex = 995;
+                    }
+                    
+                    slide.style.width = width;
+                    slide.style.height = height;
+                    slide.style.top = top;
+                    slide.style.opacity = opacity;
+                    slide.style.zIndex = zIndex;
+                    
+                    if (offset === 0) {
+                        slide.style.left = '50%';
+                        slide.style.transform = 'translateX(-50%)';
+                        slide.style.right = 'auto';
+                    } else if (offset < 0 || offset > 3) {
+                        slide.style.left = 'auto';
+                        slide.style.right = '10px';
+                        slide.style.transform = 'none';
+                    } else {
+                        slide.style.left = 'auto';
+                        slide.style.right = 'auto';
+                        slide.style.transform = 'none';
+                        var positions = ['10px', '100px', '210px'];
+                        if (offset > 0 && offset <= 3) {
+                            slide.style.left = positions[offset - 1] || '10px';
+                        }
+                    }
+                });
+                
+                currentIndex = newIndex;
+            }
+            
+            slides.forEach(function(slide, index) {
+                slide.addEventListener('click', function() {
+                    updateCarousel(index);
+                });
+            });
+        });
+    }, 50);
+    
+}, 100);
+})();
+    </script>
+
+    <script src="https://wh1to.github.io/blitzwebru/js/app.d67cb2.js"></script>
+
+</body>
+</html>
