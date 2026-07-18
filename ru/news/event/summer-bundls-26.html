@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="color-scheme" content="only light">
+    <meta name="supported-color-schemes" content="light">
+    <style>
+        :root { color-scheme: only light; } 
+    </style>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="title" content="Tanks Blitz: танковая MMO-игра">
+    <meta name="description" content="Легендарный танковый шутер. Сражайся в командных боях 7 на 7 в одиночку или с друзьями, исследуй и улучшай бронетехнику, пробуй разные тактики и побеждай. Выбери танк и отправляйся в бой!">
+    <meta property="og:image" content="images/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://wh1to.github.io/blitzwebru/css/app.d67cb2.css">
+    <title>Твой новый танк и 10 000 золота здесь! | Project Blitz</title>
+    <script async="" src="https://wh1to.github.io/blitzwebru/js/tag.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+</head>
+<body class="page ">
+    <div class="page_body" id="app">
+        <div class="page_content">
+            <main class="news-page"></main>
+            <common-menu></common-menu>
+            <main-notification></main-notification>
+            <main-navigation></main-navigation>
+            <region-popup></region-popup>
+            <flash-message></flash-message>
+            <router-view></router-view>
+    </div>
+    <main-footer></main-footer>
+    <download-popup></download-popup>
+        </div>
+    </div>
+</body>
+
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(92495432, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(100962974, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(92986267, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+        window.ymId = 92986267;
+    </script>
+
+    <noscript><div><img src="https://mc.yandex.ru/watch/92495432" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/100962974" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/92986267" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    <script>
+        window.wbpSettings = {
+            'realm': 'ru',
+            'realms': ['ru'],
+            'dev': false,
+            'defaultLang': 'ru',
+            'language': 'ru',
+            'realmLangs': {"ru": {"ru": "ru"}},
+            'langs': JSON.parse('[{"code": "ru", "text": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439"}]'),
+            'commonMenu': {
+                'sswClientId': 'QiX7FAdbGfgUqJ6bABkRYLfUqQ27O3ZuZcZPJmVt',
+                'sswUrl': 'https://lesta.ru',
+                'frontedUrl': 'https://wh1to.github.io/blitzwebru/',
+                'loaderPath': 'js/loader.min.js',
+                'backendUrls': JSON.parse('{"ru": "https://wh1to.github.io/blitzwebru/"}')
+            },
+            'links': {
+                'system': {
+                    "ru": [
+                        {"type": "eula", "url": "https://legal.tanksblitz.info/eula/", "text": "Лицензионное соглашение"},
+                        {"type": "privacy", "url": "https://legal.tanksblitz.info/privacy-policy/", "text": "Политика конфиденциальности"},
+                        {"type": "system", "url": "/content/docs/system-requirements/", "text": "Системные требования"},
+                        {"type": "job", "url": "https://join.lesta.team/", "text": "Вакансии «Леста Игры»"},
+                        {"type": "vol", "url": "https://vol.lesta.ru/", "text": "Волонтёрам"}
+                    ]
+                },
+                'social': [
+                    {"type": "vk", "url": "https://vk.com/club49033185", "text": "ВКОНТАКТЕ"},
+                    {"type": "telegram", "url": "https://t.me/tanks_blitz_official", "text": "Telegram"},
+                    {"type": "youtube", "url": "https://www.youtube.com/channel/UCrh8Fd_QKmzhv4lhrS-k4sQ", "text": "Youtube"},
+                ],
+                'age': {
+                    "ru": []
+                },
+                'store': [
+                    {"type": "app-gallery", "url": "https://appgallery.huawei.ru/app/C106970213", "text": "Скачайте в <span class=\"button-download_store\">App Gallery</span>"},
+                    {"type": "app-store", "url": "https://itunes.apple.com/app/tanks-blitz-pvp-mmo/id1634012602", "text": "Скачайте в <span class=\"button-download_store\">App Store</span>"},
+                    {"type": "ru-store", "url": "https://apps.rustore.ru/app/com.tanksblitz", "text": "Скачайте в <span class=\"button-download_store\">Rustore</span>"},
+                    {"type": "mac-app-store", "url": "https://itunes.apple.com/app/tanks-blitz-pvp-mmo/id1634012602", "text": "Скачайте в <span class=\"button-download_store\">Mac App Store</span>"},
+                    {"type": "lgc", "url": "https://lesta.ru/ru/lgc/", "text": "Скачайте в <span class=\"button-download_store\">Lesta Game Center</span>"},
+                    {"type": "galaxy-store", "url": "https://apps.samsung.com/appquery/appDetail.as?appId=com.tanksblitz", "text": "Скачайте в <span class=\"button-download_store\">Galaxy Store</span>"},
+                    {"type": "get-apps", "url": "https://global.app.mi.com/details?id=com.tanksblitz", "text": "Скачайте в <span class=\"button-download_store\">Get Apps</span>"},
+                    {"type": "google-play", "url": "https://play.google.com/store/apps/details?id=com.tanksblitz", "text": "Скачайте в <span class=\"button-download_store\">Google Play</span>"}
+                ]
+            },
+            STATIC_URL: 'https://cdn-ptl-static.tanksblitz.ru/newstatic/',
+            CSRF: {
+                API_URL: 'https://tanksblitz.ru/set_csrf/',
+                COOKIE_NAME: 'csrftokennew',
+                PARAM_NAME: 'csrftokennew'
+            },
+            AUTH: {
+                TRUSTED_ROOT: 'https://tanksblitz.ru/',
+                LOGIN_URL: 'https://tanksblitz.ru/auth/login/',
+                LOGIN_COMPLETE_URL: 'https://tanksblitz.ru/auth/login/complete/',
+                LOGIN_COMPLETE_IMMEDIATE_URL: 'https://tanksblitz.ru/auth/login/complete/immediate/',
+                LOGOUT_URL: 'https://tanksblitz.ru/auth/logout/',
+                CONTINUE_PROCESS_PARAMETER_NAME: 'auth_process',
+                ATTEMPT_IMMEDIATE_COOKIE_NAME: 'auth_sso_attempt_immediate',
+                SSO_ENABLED: true,
+                ACCOUNT_INFO_URL: 'https://tanksblitz.ru/auth/account_info/'
+            },
+            SWITCHES: JSON.parse(`{
+            "tournament_event_chests_random_order": {
+                "name": "tournament_event_chests_random_order",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": false,
+                "allow_actions": true
+            },
+            "tournaments": {
+                "name": "tournaments",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "welcome": {
+                "name": "welcome",
+                "is_active": true,
+                "start_at": "2026-07-01T08:00:00",
+                "end_at": "2026-08-03T20:59:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "auction_stub": {
+                "name": "auction_stub",
+                "is_active": false,
+                "start_at": "2020-12-18T05:00:00",
+                "end_at": "2020-12-18T13:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "seasons": {
+                "name": "seasons",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "clans_leaderboard_stub": {
+                "name": "clans_leaderboard_stub",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "tankopedia": {
+                "name": "tankopedia",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": false,
+                "allow_actions": false
+            },
+            "final_lan_buy_tickets_ui_active_2025": {
+                "name": "final_lan_buy_tickets_ui_active_2025",
+                "is_active": false,
+                "start_at": "2025-08-12T11:12:43",
+                "end_at": "2025-09-15T07:30:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_final_lan_header_customization": {
+                "name": "is_final_lan_header_customization",
+                "is_active": false,
+                "start_at": "2025-08-12T10:30:00",
+                "end_at": "2025-09-15T10:30:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "final_lan_2025": {
+                "name": "final_lan_2025",
+                "is_active": false,
+                "start_at": "2025-08-12T10:28:00",
+                "end_at": "2025-09-15T10:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_lizards_must_die_customization": {
+                "name": "is_lizards_must_die_customization",
+                "is_active": false,
+                "start_at": "2025-11-01T05:00:00",
+                "end_at": "2025-11-30T05:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_comics_selling": {
+                "name": "is_comics_selling",
+                "is_active": false,
+                "start_at": "2026-06-19T08:00:00",
+                "end_at": "2026-07-17T09:00:00",
+                "show_in_menu": true,
+                "allow_actions": false
+            },
+            "is_welcome": {
+                "name": "is_welcome",
+                "is_active": true,
+                "start_at": "2026-06-19T08:00:00",
+                "end_at": "2026-07-17T09:00:00",
+                "show_in_menu": true,
+                "allow_actions": false
+            },
+            "welcome_new_badge": {
+            "name": "welcome_new_badge",
+            "is_active": true,
+            "start_at": null,
+            "end_at": null,
+            "show_in_menu": true,
+            "allow_actions": true
+            },
+            "is_nav_customisation": {
+                "name": "is_nav_customisation",
+                "is_active": false,
+                "start_at": "2026-06-19T08:00:00",
+                "end_at": "2026-07-18T09:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_ny_2025_customization": {
+                "name": "is_ny_2025_customization",
+                "is_active": false,
+                "start_at": "2025-02-27T09:00:00",
+                "end_at": "2025-03-26T09:00:00",
+                "show_in_menu": false,
+                "allow_actions": true
+            },
+            "is_ny_navbar_customization": {
+                "name": "is_ny_navbar_customization",
+                "is_active": false,
+                "start_at": "2025-12-09T09:00:00",
+                "end_at": "2026-01-13T23:59:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "retro_v11": {
+                "name": "retro_v11",
+                "is_active": false,
+                "start_at": "2024-06-18T08:00:00",
+                "end_at": "2024-07-31T21:00:29",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "year_results": {
+                "name": "year_results",
+                "is_active": false,
+                "start_at": "2025-12-25T09:00:00",
+                "end_at": "2026-01-13T20:59:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_ice_giants_header_customization": {
+                "name": "is_ice_giants_header_customization",
+                "is_active": false,
+                "start_at": "2025-02-28T09:00:00",
+                "end_at": "2025-03-26T09:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "tournament_event": {
+                "name": "tournament_event",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": false,
+                "allow_actions": true
+            },
+            "auction": {
+                "name": "auction",
+                "is_active": false,
+                "start_at": "2023-12-15T05:37:30",
+                "end_at": "2024-01-08T05:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "comics": {
+                "name": "comics",
+                "is_active": false,
+                "start_at": "2025-02-28T09:00:00",
+                "end_at": "2026-02-28T07:56:01",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_cyber_village_customization": {
+                "name": "is_cyber_village_customization",
+                "is_active": false,
+                "start_at": "2026-03-04T14:00:00",
+                "end_at": "2026-04-01T03:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "promises_new_badge": {
+                "name": "promises_new_badge",
+                "is_active": false,
+                "start_at": "2026-07-01T08:00:00",
+                "end_at": "2026-07-02T08:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "promises": {
+                "name": "promises",
+                "is_active": false,
+                "start_at": "2026-07-01T08:00:00",
+                "end_at": "2026-07-03T20:59:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_stalcraft_customisation": {
+                "name": "is_stalcraft_customisation",
+                "is_active": false,
+                "start_at": "2026-04-08T13:03:01",
+                "end_at": "2026-04-29T21:00:01",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "is_victory_day_header_customization": {
+                "name": "is_victory_day_header_customization",
+                "is_active": false,
+                "start_at": "2026-05-08T00:00:00",
+                "end_at": "2026-05-11T00:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "rating_battles_leaderboard": {
+                "name": "rating_battles_leaderboard",
+                "is_active": false,
+                "start_at": "2024-08-27T11:52:30",
+                "end_at": "2024-08-29T06:00:02",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "forecasts": {
+                "name": "forecasts",
+                "is_active": false,
+                "start_at": null,
+                "end_at": null,
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "quest": {
+                "name": "quest",
+                "is_active": false,
+                "start_at": "2025-07-01T09:00:00",
+                "end_at": "2025-08-10T12:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "clans_leaderboard": {
+                "name": "clans_leaderboard",
+                "is_active": false,
+                "start_at": "2024-08-27T11:53:15",
+                "end_at": "2024-08-29T06:00:17",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "gifts": {
+                "name": "gifts",
+                "is_active": false,
+                "start_at": "2026-05-28T11:00:00",
+                "end_at": "2026-07-29T05:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            },
+            "comics_new_badge": {
+                "name": "comics_new_badge",
+                "is_active": false,
+                "start_at": "2026-06-19T08:00:00",
+                "end_at": "2026-06-20T08:00:00",
+                "show_in_menu": true,
+                "allow_actions": true
+            }
+            }` || '{}'),
+            FOOTER: JSON.parse('{"id": 1, "name": "footer 2025", "text": "Aifemu, 2024 — 2026. Проект Project Blitz основана на интеллектуальной собственности третьих лиц. Все права на объекты прав третьих лиц принадлежат их законным правообладателям..", "start_date": "2026-01-01"}' || '{}'),
+            YA_METRIKA_COUNTER_IDS: {},
+            ADMIN_CDN_URL: 'https://cdn-ptl-media.tanksblitz.ru',
+            GLOSSARY_CDN_URL: 'https://glossary-static.lesta.ru',
+            EXTERNAL_APIS: {"wbpbe": {"url": {"ru": "https://ru-lwbpbe.lstprod.net", "rb": "https://ru-lwbpbe.lstprod.net"}, "use_lang": true, "single_realm": false}, "watch-blitz": {"url": {"ru": "https://fake-watchblitz-ru.tanksblitz.ru"}, "use_lang": false, "single_realm": false}, "watch-blitz-ws": {"url": {"ru": "https://fake-watchblitz-ru.tanksblitz.ru"}, "use_lang": false, "single_realm": false}},
+            PROBLEM_TRACKER_ENABLED: true,
+            PROBLEM_TRACKER_URL: 'https://fake.it',
+            PROBLEM_TRACKER_NOTIFY_TIMEOUT: 10,
+            SENTRY_DSN: 'https://4d028fffc4824d1db911a0182a6fd6b2:f5834e0e3e254d9d8ed408a26818b6a1@sentry.lstprod.net/73',
+            IS_CHINESE: false,
+            FOOTER_LOGO_LINK: 'https://lesta.ru',
+            PREMIUM_SHOP_LINK: 'https://lesta.ru/shop/wotb'
+        };
+        var context = {
+            "is_preview": false,
+            "news_page": {
+                "category": {
+                    "important": false,
+                    "lang": "ru",
+                    "order": 0,
+                    "slug": "event",
+                    "title": "\u0421\u043e\u0431\u044b\u0442\u0438\u044f"
+                },
+                    "content": `<div>
+    <h2>Как же хочется простого человеческого…</h2>
+    <p>
+      <currency count="10 000" type="gold"></currency> на аккаунт и новый танк.
+      И желательно, чтобы сразу «десятка». И чтобы необычная!
+      Круто было бы получить МС-11, «золотую Ягу» или даже коллекционную «Бабаху» 💥
+      Вот тогда бы началась действительно сладкая жизнь…
+    </p>
+    <h2>
+      Ни в чём себе не отказывай — открывай контейнеры
+      <img src="https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/chest_honey2x.webp" style="vertical-align: middle; width: 50px;" />
+      «Ну мёд!»
+    </h2>
+    <p>
+      Контейнер
+      <img src="https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/chest_honey2x.webp" style="vertical-align: middle; width: 30px;" />
+      «Ну мёд!» с вероятностью 99,9% принесёт тебе случайный танк X уровня или
+      <currency count="10 000" type="gold"></currency>, а также от 1 до 5
+      <img src="https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/prx_honey2x.png" style="vertical-align: middle; width: 20px;" />
+      Баночек мёда ЛИБО с вероятностью 0,1% — Танкоин.
+    </p>
+    <p style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+      <img src="https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/prx_honey2x.png" style="vertical-align: middle; width: 20px;" />
+      Баночка мёда — особая валюта, которую можно потратить в магазине игры на танк или обменять на
+      <currency count="100" type="gold"></currency>.
+      Собери 50
+      <img src="https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/prx_honey2x.png" style="vertical-align: middle; width: 20px;" />
+      Баночек мёда и сможешь обменять их на
+      <vehicle name="MS-11"></vehicle>,
+      <vehicle name="JagdPz_E100_Gold"></vehicle>,
+      <vehicle name="GB48_FV215b_183"></vehicle> или
+      <vehicle name="G181_StuG_Maus"></vehicle>.
+    </p>
+    <p style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+      Если из контейнера выпадет танк, который уже есть в твоём Ангаре, в качестве компенсации ты получишь сертификат «За повторку».
+      Полный список машин, которые ты сможешь получить из этого сертификата,
+      <a href="https://tanksblitz.ru/ru/content/certificate-zapovtorku-droplist/?realm=ru#/">ищи здесь.</a>
+    </p>
+    <details>
+      <summary>Какие «десятки» ты можешь получить 👀</summary>
+      <div data-type="detailsContent">
+        <ul>
+          <li><p><vehicle name="R120_T22SR"></vehicle></p></li>
+          <li><p><vehicle name="GB92_FV217"></vehicle></p></li>
+          <li><p><vehicle name="M60"></vehicle></p></li>
+          <li><p><vehicle name="GB84_Chieftain_Mk6"></vehicle></p></li>
+          <li><p><vehicle name="Ch25_121_mod_1971B"></vehicle></p></li>
+          <li><p><vehicle name="F72_AMX_30"></vehicle></p></li>
+          <li><p><vehicle name="A95_T95E6"></vehicle></p></li>
+          <li><p><vehicle name="Ch41_WZ_111_5A"></vehicle></p></li>
+          <li><p><vehicle name="G_VK9001P"></vehicle></p></li>
+          <li><p><vehicle name="GB91_Super_Conqueror"></vehicle></p></li>
+          <li><p><vehicle name="A128_Concept_1b"></vehicle></p></li>
+          <li><p><vehicle name="Object_907"></vehicle></p></li>
+          <li><p><vehicle name="R110_Object_260"></vehicle></p></li>
+          <li><p><vehicle name="G144_Kpz_50t"></vehicle></p></li>
+          <li><p><vehicle name="S31_Strv_K"></vehicle></p></li>
+          <li><p><vehicle name="R119_Object_777"></vehicle></p></li>
+          <li><p><vehicle name="It20_Car_Comb_45t"></vehicle></p></li>
+          <li><p><vehicle name="Ch44_114_SP2"></vehicle></p></li>
+          <li><p><vehicle name="A153_XM66F"></vehicle></p></li>
+          <li><p><vehicle name="A155_AAT60"></vehicle></p></li>
+          <li><p><vehicle name="Ch52_WZ_122_6_F3"></vehicle></p></li>
+          <li><p><vehicle name="A150_MBT_B"></vehicle></p></li>
+          <li><p><vehicle name="R178_Object_780"></vehicle></p></li>
+          <li><p><vehicle name="G162_Project_Kpz_07P_E"></vehicle></p></li>
+          <li><p><vehicle name="J36_Type_63_HT"></vehicle></p></li>
+          <li><p><vehicle name="A165_XM57"></vehicle></p></li>
+          <li><p><vehicle name="R96_Object430B"></vehicle></p></li>
+          <li><p><vehicle name="G181_StuG_Maus"></vehicle></p></li>
+          <li><p><vehicle name="R149_Object_268_4"></vehicle></p></li>
+          <li><p><vehicle name="G167_Tiger_Maus"></vehicle></p></li>
+          <li><p><vehicle name="GB114_Vickers_MBT_Mk3"></vehicle></p></li>
+          <li><p><vehicle name="MS-11"></vehicle></p></li>
+          <li><p><vehicle name="JagdPz_E100_Gold"></vehicle></p></li>
+          <li><p><vehicle name="GB48_FV215b_183"></vehicle></p></li>
+        </ul>
+      </div>
+    </details>
+    <blockquote class="message-block">
+      <p>
+        Ищи контейнеры «Ну мёд!» в магазине с 22 июня 11:00 (МСК) по 13 июля 11:00 (МСК).
+      </p>
+    </blockquote>
+    <p><br></p>
+<p style="text-align: center;">
+    <a data-v-55dd706e="" class="button-container button-container-default" href="https://lesta.ru/shop/tb/filters/?name=nytch" style="
+        display: inline-block;
+        height: 52px;
+        line-height: 52px;
+        padding: 0 40px;
+        text-decoration: none;
+        color: #1a1a1a;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: Muller-Black !important;
+        background: url('../../../images/bg_primary.png') center / 100% 100% no-repeat;
+    ">
+        за контейнерами!
+    </a>
+</p>
+  </div>`,
+                    "images": {
+                    "big": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Summer_Chests_Bundles_1920x1080-1.jpg__1048x590_q95_crop_subsampling-2.jpg",
+                    "client": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Summer_Chests_Bundles_1920x1080-1.jpg__455x256_q95_subsampling-2.jpg",
+                    "medium": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Summer_Chests_Bundles_1920x1080-1.jpg__392x224_q95_crop_subsampling-2.jpg",
+                    "small": "https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Summer_Chests_Bundles_1920x1080-1.jpg__168x98_q95_crop_subsampling-2.jpg"
+                    },
+                    "forum_link": "",
+                    "id": 1,
+                    "is_hidden_image_banner": false,
+                    "is_hidden_title_description": false,
+                    "lang": "ru",
+                    "name": "Контейнеры Ну мёд!",
+                    "pin_page": false,
+                    "pin_weight": 0,
+                    "publication_start_at": "2026-06-22T08:00:00",
+                    "reactions_pack": "",
+                    "related": [],
+                    "show_timer": false,
+                    "slug": "summer-bundls-26",
+                    "status": 200,
+                    "timer_end_at": null,
+                    "timer_info": null,
+                    "timer_start_at": null,
+                    "translation": {
+                        "description": "Открывай контейнеры «Ну мёд!»",
+                        "title": "Твой новый танк и 10 000 золота здесь!"
+                    },
+},
+  "stuff": {}
+        };
+
+
+
+
+window.onload = function() {
+    window.mount('newsPage', false, context, window.wbpSettings);
+};
+
+(function() {
+function timeAgo(dateString) {
+    if (!dateString) return '';
+    
+    const now = new Date();
+    const past = new Date(dateString);
+    const diffMs = now - past;
+    const diffSec = Math.floor(diffMs / 1000);
+    const diffMin = Math.floor(diffSec / 60);
+    const diffHours = Math.floor(diffMin / 60);
+    const diffDays = Math.floor(diffHours / 24);
+    const diffMonths = Math.floor(diffDays / 30);
+    const diffYears = Math.floor(diffDays / 365);
+    
+    function pluralize(number, one, two, five) {
+        const n = Math.abs(number) % 100;
+        const n1 = n % 10;
+        if (n > 10 && n < 20) return five;
+        if (n1 > 1 && n1 < 5) return two;
+        if (n1 === 1) return one;
+        return five;
+    }
+    
+    if (diffYears >= 2) {
+        return diffYears + ' ' + pluralize(diffYears, 'год', 'года', 'лет') + ' назад';
+    } else if (diffYears >= 1) {
+        return 'год назад';
+    } else if (diffMonths >= 2) {
+        return diffMonths + ' ' + pluralize(diffMonths, 'месяц', 'месяца', 'месяцев') + ' назад';
+    } else if (diffMonths >= 1) {
+        return 'месяц назад';
+    } else if (diffDays >= 7) {
+        const weeks = Math.floor(diffDays / 7);
+        return weeks + ' ' + pluralize(weeks, 'неделя', 'недели', 'недель') + ' назад';
+    } else if (diffDays >= 2) {
+        return diffDays + ' ' + pluralize(diffDays, 'день', 'дня', 'дней') + ' назад';
+    } else if (diffDays >= 1) {
+        return 'вчера';
+    } else if (diffHours >= 2) {
+        return diffHours + ' ' + pluralize(diffHours, 'час', 'часа', 'часов') + ' назад';
+    } else if (diffHours >= 1) {
+        return 'час назад';
+    } else if (diffMin >= 2) {
+        return diffMin + ' ' + pluralize(diffMin, 'минута', 'минуты', 'минут') + ' назад';
+    } else if (diffMin >= 1) {
+        return 'минуту назад';
+    } else if (diffSec >= 5) {
+        return diffSec + ' ' + pluralize(diffSec, 'секунда', 'секунды', 'секунд') + ' назад';
+    } else {
+        return 'только что';
+    }
+}
+setTimeout(function() {
+    const container = document.querySelector('.news-page');
+    if (!container) return;
+    const news = context.news_page;
+    if (!news) return;
+    
+    let content = news.content;
+    
+    const currencyIcons = {
+        'gold': 'gold.png',
+        'silver': 'silver.png',
+        'freexp': 'freexp.png',
+        'premium': 'premium.png',
+        'elitexp': 'elitexp.png',
+        'crewxp': 'crewxp.png',
+        'battlexp': 'battlexp.png'
+    };
+    
+    content = content.replace(
+        /<currency count="([^"]+)" type="([^"]+)"><\/currency>/g,
+        function(match, count, type) {
+            const iconFile = currencyIcons[type] || 'gold.png';
+            return `<span class="currency-display" style="display:inline-flex;align-items:center;gap:6px;font-weight:bold;white-space:nowrap;">
+                ${count}<img src="../../../images/${iconFile}" alt="${type}" style="width:24px;height:24px;object-fit:contain;vertical-align:middle;flex-shrink:0;">
+            </span>`;
+        }
+    );
+    content = content.replace(
+        /<vehicle name="([^"]+)"><\/vehicle>/g,
+        function(match, name) {
+            var tankNames = {
+                'R120_T22SR': 'Т-22 ср.',
+                'GB92_FV217': 'FV217 Badger',
+                'M60': 'M60',
+                'GB84_Chieftain_Mk6': 'Chieftain Mk. 6',
+                'Ch25_121_mod_1971B': '121B',
+                'F72_AMX_30': 'AMX 30 B',
+                'A95_T95E6': 'T95E6',
+                'Ch41_WZ_111_5A': 'WZ-111 model 5A',
+                'G_VK9001P': 'VK 90.01 (P)',
+                'GB91_Super_Conqueror': 'Super Conqueror',
+                'A128_Concept_1b': 'Concept 1B',
+                'Object_907': 'Объект 907',
+                'R110_Object_260': 'Объект 260',
+                'G144_Kpz_50t': 'Kampfpanzer 50 t',
+                'S31_Strv_K': 'Strv K',
+                'R119_Object_777': 'Объект 777 Вариант II',
+                'It20_Car_Comb_45t': 'Carro da Combattimento 45t',
+                'Ch44_114_SP2': '114 SP2',
+                'A153_XM66F': 'XM66F',
+                'A155_AAT60': 'AAT60',
+                'Ch52_WZ_122_6_F3': '116-F3',
+                'A150_MBT_B': 'MBT-B',
+                'R178_Object_780': 'Объект 780',
+                'G162_Project_Kpz_07P_E': 'Kampfpanzer 07 P(E)',
+                'J36_Type_63_HT': 'Type 63',
+                'A165_XM57': 'XM57',
+                'R96_Object430B': 'Объект 430Б',
+                'G181_StuG_Maus': 'StuG Maus',
+                'R149_Object_268_4': 'Объект 268 Вариант 4',
+                'G167_Tiger_Maus': 'VK 120.03 (H) Tiger-Maus',
+                'GB114_Vickers_MBT_Mk3': 'Vickers Mk. 3',
+                'MS-11': 'МС-11',
+                'JagdPz_E100_Gold': 'Jagdpanzer E 100 Gold',
+                'GB48_FV215b_183': 'FV215b (183)'
+            };
+            
+            var flags = {
+                'R120_T22SR': 'ussr',
+                'GB92_FV217': 'uk',
+                'M60': 'usa',
+                'GB84_Chieftain_Mk6': 'uk',
+                'Ch25_121_mod_1971B': 'china',
+                'F72_AMX_30': 'france',
+                'A95_T95E6': 'usa',
+                'Ch41_WZ_111_5A': 'china',
+                'G_VK9001P': 'germany',
+                'GB91_Super_Conqueror': 'uk',
+                'A128_Concept_1b': 'usa',
+                'Object_907': 'ussr',
+                'R110_Object_260': 'ussr',
+                'G144_Kpz_50t': 'germany',
+                'S31_Strv_K': 'sweden',
+                'R119_Object_777': 'ussr',
+                'It20_Car_Comb_45t': 'italy',
+                'Ch44_114_SP2': 'china',
+                'A153_XM66F': 'usa',
+                'A155_AAT60': 'usa',
+                'Ch52_WZ_122_6_F3': 'china',
+                'A150_MBT_B': 'usa',
+                'R178_Object_780': 'ussr',
+                'G162_Project_Kpz_07P_E': 'germany',
+                'J36_Type_63_HT': 'japan',
+                'A165_XM57': 'usa',
+                'R96_Object430B': 'ussr',
+                'G181_StuG_Maus': 'germany',
+                'R149_Object_268_4': 'ussr',
+                'G167_Tiger_Maus': 'germany',
+                'GB114_Vickers_MBT_Mk3': 'uk',
+                'MS-11': 'ussr',
+                'JagdPz_E100_Gold': 'germany',
+                'GB48_FV215b_183': 'uk'
+            };
+            
+            var types = {
+                'R120_T22SR': 'mediumtank',
+                'GB92_FV217': 'at-spg',
+                'M60': 'mediumtank',
+                'GB84_Chieftain_Mk6': 'heavytank',
+                'Ch25_121_mod_1971B': 'mediumtank',
+                'F72_AMX_30': 'mediumtank',
+                'A95_T95E6': 'heavytank',
+                'Ch41_WZ_111_5A': 'heavytank',
+                'G_VK9001P': 'heavytank',
+                'GB91_Super_Conqueror': 'heavytank',
+                'A128_Concept_1b': 'heavytank',
+                'Object_907': 'mediumtank',
+                'R110_Object_260': 'heavytank',
+                'G144_Kpz_50t': 'mediumtank',
+                'S31_Strv_K': 'heavytank',
+                'R119_Object_777': 'heavytank',
+                'It20_Car_Comb_45t': 'mediumtank',
+                'Ch44_114_SP2': 'heavytank',
+                'A153_XM66F': 'at-spg',
+                'A155_AAT60': 'at-spg',
+                'Ch52_WZ_122_6_F3': 'heavytank',
+                'A150_MBT_B': 'heavytank',
+                'R178_Object_780': 'heavytank',
+                'G162_Project_Kpz_07P_E': 'heavytank',
+                'J36_Type_63_HT': 'heavytank',
+                'A165_XM57': 'at-spg',
+                'R96_Object430B': 'mediumtank',
+                'G181_StuG_Maus': 'at-spg',
+                'R149_Object_268_4': 'at-spg',
+                'G167_Tiger_Maus': 'heavytank',
+                'GB114_Vickers_MBT_Mk3': 'heavytank',
+                'MS-11': 'mediumtank',
+                'JagdPz_E100_Gold': 'at-spg',
+                'GB48_FV215b_183': 'at-spg'
+            };
+            
+            var flag = flags[name] || 'default';
+            var type = types[name] || 'mediumtank';
+            var displayName = tankNames[name] || name.replace(/_/g, ' ');
+            
+            var tankClass = 'tanks-info__collection';
+            if (name === 'M60' || name === 'GB84_Chieftain_Mk6' || name === 'Ch25_121_mod_1971B' || name === 'JagdPz_E100_Gold') {
+                tankClass = 'tanks-info__premium';
+            }
+            
+            return `<span class="${tankClass} tanks-info">
+                <span class="tanks-info_flag__${flag} tanks-info_flag"></span>
+                <span class="tanks-info_type__${type} tanks-info_type"></span>
+                <span class="tanks-info_level">X</span>
+                ${displayName}
+            </span>`;
+        }
+    );
+    content = content.replace(
+        /<gallery uuid="([^"]+)"><\/gallery>/g,
+        function(match, uuid) {
+            var images = [
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/reborn_BP26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/river_BP26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/spark_battle_map_26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/stream_Battle_map_26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/winds_BP26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/elemental_battle_map_26.06.png',
+                'https://cdn-ptl-media.tanksblitz.ru/media/filer_public/images/lava_BP26.06.png'
+            ];
+            
+            var slidesHtml = '';
+            var positions = [
+                { left: '80px', top: '110px', w: '140px', h: '90px', z: 996, op: 0.5 },
+                { left: '140px', top: '95px', w: '190px', h: '120px', z: 997, op: 0.7 },
+                { left: '210px', top: '70px', w: '260px', h: '170px', z: 998, op: 0.9 },
+                { center: true, top: '35px', w: '380px', h: '240px', z: 999, op: 1 },
+                { right: '210px', top: '70px', w: '260px', h: '170px', z: 998, op: 0.9 },
+                { right: '140px', top: '95px', w: '190px', h: '120px', z: 997, op: 0.7 },
+                { right: '80px', top: '110px', w: '140px', h: '90px', z: 996, op: 0.5 }
+            ];
+            
+            for (var i = 0; i < positions.length; i++) {
+                var pos = positions[i];
+                var style = 'position:absolute; width:' + pos.w + '; height:' + pos.h + '; z-index:' + pos.z + '; border-radius:8px; overflow:hidden; cursor:pointer; transition:all 0.5s ease;';
+                if (pos.center) {
+                    style += ' left:50%; transform:translateX(-50%); top:' + pos.top + ';';
+                } else if (pos.left) {
+                    style += ' left:' + pos.left + '; top:' + pos.top + ';';
+                } else {
+                    style += ' right:' + pos.right + '; top:' + pos.top + ';';
+                }
+                style += ' opacity:' + pos.op + ';';
+                
+                slidesHtml += '<div class="carousel-slide" data-index="' + i + '" style="' + style + '">' +
+                    '<div style="background-size:cover; background-image:url(' + images[i] + '); height:100%; width:100%;"></div>' +
+                '</div>';
+            }
+            
+            return '<div style="width:100%; overflow:visible; padding:20px 0; position:relative;">' +
+                '<div id="carousel-' + uuid + '" style="height:310px; position:relative; margin:0 auto; width:100%; max-width:900px; overflow:visible;">' +
+                slidesHtml +
+            '</div></div>';
+        }
+    );
+    
+    
+    container.innerHTML = `
+        <div>
+            <div class="news-page_item">
+                <article class="news">
+                    <div class="news_body">
+                        <div class="bread-crumbs">
+                            <a href="/ru/" class="bread-crumbs_link"><span>Главная</span></a>
+                            <a href="/ru/news/" class="bread-crumbs_link"><span>Лента</span></a>
+                            <a href="/ru/news/#/event" class="bread-crumbs_link">События</a>
+                        </div>
+                        <h1 class="news_heading">${news.translation?.title || news.name}</h1>
+                        <p class="news_time"><span>${timeAgo(news.publication_start_at)}</span></p>
+                        <div class="news_banner">
+                            <div>
+                                <img src="${news.images.big}" alt="${news.translation?.title || news.name}">
+                            </div>
+                        </div>
+                        <div class="news_content">${content}</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    `;
+    
+    setTimeout(function() {
+        document.querySelectorAll('[id^="carousel-"]').forEach(function(carouselContainer) {
+            var slides = carouselContainer.querySelectorAll('.carousel-slide');
+            var totalSlides = slides.length;
+            var currentIndex = 3;
+            
+            function updateCarousel(newIndex) {
+                if (newIndex === currentIndex) return;
+                
+                slides.forEach(function(slide, i) {
+                    var offset = (i - newIndex + totalSlides) % totalSlides;
+                    if (offset > 3) offset -= totalSlides;
+                    
+                    var width, height, top, opacity, zIndex;
+                    
+                    switch(offset) {
+                        case -3: case 4:
+                            width = '140px'; height = '90px'; top = '110px'; opacity = 0.5; zIndex = 996; break;
+                        case -2: case 5:
+                            width = '190px'; height = '120px'; top = '95px'; opacity = 0.7; zIndex = 997; break;
+                        case -1: case 6:
+                            width = '260px'; height = '170px'; top = '70px'; opacity = 0.9; zIndex = 998; break;
+                        case 0:
+                            width = '380px'; height = '240px'; top = '35px'; opacity = 1; zIndex = 999; break;
+                        case 1:
+                            width = '260px'; height = '170px'; top = '70px'; opacity = 0.9; zIndex = 998; break;
+                        case 2:
+                            width = '190px'; height = '120px'; top = '95px'; opacity = 0.7; zIndex = 997; break;
+                        case 3:
+                            width = '140px'; height = '90px'; top = '110px'; opacity = 0.5; zIndex = 996; break;
+                        default:
+                            width = '140px'; height = '90px'; top = '110px'; opacity = 0.3; zIndex = 995;
+                    }
+                    
+                    slide.style.width = width;
+                    slide.style.height = height;
+                    slide.style.top = top;
+                    slide.style.opacity = opacity;
+                    slide.style.zIndex = zIndex;
+                    
+                    if (offset === 0) {
+                        slide.style.left = '50%';
+                        slide.style.transform = 'translateX(-50%)';
+                        slide.style.right = 'auto';
+                    } else if (offset < 0 || offset > 3) {
+                        slide.style.left = 'auto';
+                        slide.style.right = '10px';
+                        slide.style.transform = 'none';
+                    } else {
+                        slide.style.left = 'auto';
+                        slide.style.right = 'auto';
+                        slide.style.transform = 'none';
+                        var positions = ['10px', '100px', '210px'];
+                        if (offset > 0 && offset <= 3) {
+                            slide.style.left = positions[offset - 1] || '10px';
+                        }
+                    }
+                });
+                
+                currentIndex = newIndex;
+            }
+            
+            slides.forEach(function(slide, index) {
+                slide.addEventListener('click', function() {
+                    updateCarousel(index);
+                });
+            });
+        });
+    }, 50);
+    
+}, 100);
+
+
+
+})();
+    </script>
+
+    <script src="https://wh1to.github.io/blitzwebru/js/app.d67cb2.js"></script>
+
+</body>
+</html>
