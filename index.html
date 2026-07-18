@@ -136,7 +136,27 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/92495432" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <noscript><div><img src="https://mc.yandex.ru/watch/100962974" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <noscript><div><img src="https://mc.yandex.ru/watch/92986267" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-
+<script>
+    fetch('https://raw.githubusercontent.com/wh1to/blitzwebru/refs/heads/main/news.js')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Ошибка загрузки: ' + response.status);
+            }
+            return response.text();
+        })
+        .then(data => {
+            eval(data);
+            if (window.newsData) {
+                renderMainGrid(window.newsData.mainGrid);
+                renderNewsList(window.newsData.newsList);
+                setTimeout(initTimers, 100);
+            }
+        })
+        .catch(() => {
+            document.getElementById('news-grid-container').innerHTML = 
+                '<div style="padding: 20px; text-align: center; color: #ff6b6b;">CANT LOAD NEWS DATA</div>';
+        });
+</script>
     <script>
         window.wbpSettings = {
             'realm': 'ru',
@@ -164,11 +184,9 @@
                     ]
                 },
                 'social': [
-                    {"type": "max", "url": "https://max.ru/tanksblitz", "text": "Макс"},
                     {"type": "vk", "url": "https://vk.com/club49033185", "text": "ВКОНТАКТЕ"},
                     {"type": "telegram", "url": "https://t.me/tanks_blitz_official", "text": "Telegram"},
-                    {"type": "youtube", "url": "https://www.youtube.com/channel/UCrh8Fd_QKmzhv4lhrS-k4sQ", "text": "Youtube"},
-                    {"type": "twitch", "url": "https://www.twitch.tv/tanks_blitz_official", "text": "Twitch"}
+                    {"type": "youtube", "url": "https://www.youtube.com/channel/UCrh8Fd_QKmzhv4lhrS-k4sQ", "text": "Youtube"}
                 ],
                 'age': {
                     "ru": []
