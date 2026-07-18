@@ -31,7 +31,7 @@
                     link: '/ru/news/event/summer-bundls-26/',
                     category: { name: 'События', link: '/ru/news/event/summer-bundls-26.html#/' },
                     showTimer: true,
-                    timerEnd: '2026-07-17T23:59:59'
+                    timerEnd: '2026-08-31T23:59:59'
                 },
                 {
                     id: 4,
