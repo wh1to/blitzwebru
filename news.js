@@ -29,7 +29,7 @@
                     title: 'Твой новый танк и 10 000 золота здесь!',
                     description: 'Открывай контейнеры «Ну мёд!»',
                     link: '/ru/news/event/summer-bundls-26/',
-                    category: { name: 'События', link: '/ru/news/event/summer-bundls-26.html#/' },
+                    category: { name: 'События', link: '/blitzwebru/ru/news/event/summer-bundls-26.html#/' },
                     showTimer: true,
                     timerEnd: '2026-08-31T23:59:59'
                 },
