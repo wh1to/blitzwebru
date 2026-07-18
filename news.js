@@ -28,8 +28,8 @@
                     image: 'https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Summer_Chests_Bundles_1920x1080-1.jpg__1048x590_q95_crop_subsampling-2.jpg',
                     title: 'Твой новый танк и 10 000 золота здесь!',
                     description: 'Открывай контейнеры «Ну мёд!»',
-                    link: '/ru/news/event/summer-bundls-26/',
-                    category: { name: 'События', link: '/blitzwebru/ru/news/event/summer-bundls-26.html/' },
+                    link: '/blitzwebru/ru/news/event/summer-bundls-26.html/',
+                    category: { name: 'События', link: '/ru/news/#/event' },
                     showTimer: true,
                     timerEnd: '2026-08-31T23:59:59'
                 },
