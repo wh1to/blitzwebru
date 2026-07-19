@@ -1,7 +1,7 @@
 GS.CommonMenu.configs.realm = {
     "static_links": [
         {
-            "url": "https://lesta.ru/shop/tb/",
+            "url": "",
             "color": "ffbe4c",
             "id": 143,
             "title_text": "realm_link_title_prem_shop"
@@ -11,12 +11,6 @@ GS.CommonMenu.configs.realm = {
             "color": "ffffff",
             "id": 134,
             "title_text": "link_title_support"
-        },
-        {
-            "url": "https://card.lesta.ru/ordercard/tb/",
-            "color": "ffbe4c",
-            "id": 148,
-            "title_text": "realm_link_title_tanksblitz_card"
         },
         {
             "url": "",
