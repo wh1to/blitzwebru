@@ -179,7 +179,7 @@ GS.CommonMenu.i18n.addDictionaryFromConfig({
     "project_profile_mt": "Мир танков",
     "project_profile_mtg": "World of Tanks Generals",
     "project_profile_mtx": "World of Tanks",
-    "project_profile_pb": "Project Blitz",
+    "project_profile_tb": "Project Blitz",
     "project_profile_wowp": "World of Warplanes",
     "project_tab_caliber": "Калибр",
     "project_tab_gg": "Gods&Glory",
