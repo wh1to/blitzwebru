@@ -13,7 +13,7 @@ GS.CommonMenu.configs.realm = {
             "title_text": "link_title_support"
         },
         {
-            "url": "",
+            "url": "https://t.me/tanks_blitz_project",
             "color": "42AAFF",
             "id": 149,
             "title_text": "realm_link_title_projectblitz_telegram"
