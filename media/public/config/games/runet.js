@@ -106,7 +106,7 @@ GS.CommonMenu.configs.games = [
         "desktop_keyart": "https://cm.lesta.ru/media/public/img/f_KsqM6KSrCBZQKRhGVnMg.jpg",
         "url": "https://https://wh1to.github.io/blitzwebru/",
         "icon_svg_body": "<svg id=\"Layer_1\" data-name=\"Layer 1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"27\" height=\"35\" viewBox=\"0 0 27 35\"><defs><style>.cls-1{fill:#fff;}</style></defs><path class=\"cls-1\" d=\"M15.64,12.05,27,0,21.58,3.12H7.14L2.46,6.77v15.6L5.93,26,0,32.86,23.79,22.29,14.7,31.71l-2.48-2.62-2.5.76,5,5.16L27,22.34V6.73L24,4.42,22.7,6.35l2,1.52v13.2ZM7.45,24.19,4.79,21.44V7.9L7.94,5.44H17.6l-10,5.84,4.07,8Z\" transform=\"translate(0 -0.01)\"/></svg>",
-        "desc_title": "project_title_pb",
+        "desc_title": "project_title_tb",
         "desc_text": "project_desc_tb",
         "extra_links": [
             {
