@@ -53,17 +53,17 @@
                 {
                     id: 1,
                     image: 'https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/new-announcement-preview.jpg__168x98_q95_crop_subsampling-2.jpg',
-                    title: 'Рассказываем, как сохранить доступ к Аккаунту',
-                    description: 'Важные изменения при входе в игру',
-                    link: '/ru/news/common/ways-to-access-your-account/',
+                    title: 'Прекращение поддержки Android устройств',
+                    description: '',
+                    link: '/blitzwebru/ru/news/common/androidend.html#/',
                     category: { name: 'Общее', link: '/ru/news/#/common' }
                 },
                 {
-                    id: 2,
-                    image: 'https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Rename_new_art_1920x1080_LG_SPb_TB.jpg__168x98_q95_crop_subsampling-2.jpg',
-                    title: 'Освобождаем неактивные никнеймы',
-                    description: 'Как сохранить свой никнейм — или заполучить новый.',
-                    link: '/ru/news/common/free-nicknames-info-2026/',
+                    id: 1,
+                    image: 'https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/new-announcement-preview.jpg__168x98_q95_crop_subsampling-2.jpg',
+                    title: 'Первый тест уже здесь!',
+                    description: 'Тестируй до 31 июля.',
+                    link: '/blitzwebru/ru/news/common/first-test.html#/',
                     category: { name: 'Общее', link: '/ru/news/#/common' }
                 }
             ]
