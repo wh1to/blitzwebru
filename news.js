@@ -6,14 +6,23 @@
                     id: 1,
                     position: 1,
                     image: 'https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/new-announcement-preview.jpg__1048x590_q95_crop_subsampling-2.jpg',
+                    title: 'Общий тест 1.0.4',
+                    description: '',
+                    link: '/blitzwebru/ru/news/common/ot_1_0_4.html#/',
+                    category: { name: 'Общее', link: '/ru/news/#/event' },
+                },
+                {
+                    id: 2,
+                    position: 2,
+                    image: 'https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/new-announcement-preview.jpg__1048x590_q95_crop_subsampling-2.jpg',
                     title: 'Прекращение поддержки Android устройств',
                     description: '',
                     link: '/blitzwebru/ru/news/common/androidend.html#/',
                     category: { name: 'Общее', link: '/ru/news/#/event' },
                 },
                 {
-                    id: 2,
-                    position: 2,
+                    id: 3,
+                    position: 3,
                     image: 'https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/new-announcement-preview.jpg__1048x590_q95_crop_subsampling-2.jpg',
                     title: 'Первый тест уже здесь!',
                     description: 'Тестируй до 31 июля.',
@@ -23,8 +32,8 @@
                     timerEnd: '2026-07-31T23:00:00'
                 },
                 {
-                    id: 3,
-                    position: 3,
+                    id: 4,
+                    position: 4,
                     image: 'https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/Banner_Summer_Chests_Bundles_1920x1080-1.jpg__1048x590_q95_crop_subsampling-2.jpg',
                     title: 'Твой новый танк и 10 000 золота здесь!',
                     description: 'Открывай контейнеры «Ну мёд!»',
@@ -34,8 +43,8 @@
                     timerEnd: '2026-08-31T23:59:59'
                 },
                 {
-                    id: 4,
-                    position: 4,
+                    id: 5,
+                    position: 5,
                     image: 'https://cdn-ptl-media.tanksblitz.ru/media/filer_public_thumbnails/filer_public/images/premium-shop-preview.jpg__1048x590_q95_crop_subsampling-2.jpg',
                     title: 'Премиум магазин',
                     description: 'СКОРО...',
